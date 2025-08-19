@@ -10,9 +10,13 @@ export default function index20(){
             Fabrication
           </h2>
 
-          <div className="px-md-5 py-md-3 text-center">
+          <div className="px-md-5 py-md-3 text-start">
             <h4 style={{ color: 'rgb(66, 66, 66)', fontWeight: 400 }}>
-              BMW Steels Ltd. has state of the art basalt manufacturing plant situated in Bhagwanpur, Haridwar, Uttarakhand.
+            Our state-of-the-art fabrication facility is equipped to deliver high-precision, heavy-duty fabrication solutions 
+tailored for industries such as Power Generation, Cement, oil & gas, mineral processing, and heavy engineering. 
+With advanced machinery, skilled personnel, and strict quality controls, we provide end-to-end fabrication 
+services including machining, up to six meter length pipe rolling, automatic and manual welding, and laser 
+cutting.
             </h4>
           </div>
         </div>
@@ -72,7 +76,7 @@ export default function index20(){
       {/* BANNER END */}
 
       {/* Section 1 */}
-      <div className="p-md-5 mt-3">
+      {/* <div className="p-md-5 mt-3">
         <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
           <div className="w-100 p-3">
             <h2 className="pt-md-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
@@ -86,18 +90,12 @@ export default function index20(){
                 textAlign: 'justify',
               }}
             >
-              We have dedicated metal fabrication services at BMW Steels using many materials, from stainless steel to aluminum, bronze and carbon steel. We have experienced fabricators, and they use a variety of welding processes, including MIG, synergic MIG and TIG, built to your specifications.
-            </h5>
-            <h5
-              className="pt-4"
-              style={{
-                color: 'rgb(66, 66, 66)',
-                fontWeight: 400,
-                textAlign: 'justify',
-              }}
-            >
-              To give all our fabrication work an edge of accuracy, we use CAD to provide precision work, and when we create profiles, we laser cut and water cut for accuracy.
-            </h5>
+              Our state-of-the-art fabrication facility is equipped to deliver high-precision, heavy-duty fabrication solutions 
+tailored for industries such as Power Generation, Cement, oil & gas, mineral processing, and heavy engineering. 
+With advanced machinery, skilled personnel, and strict quality controls, we provide end-to-end fabrication 
+services including machining, up to six meter length pipe rolling, automatic and manual welding, and laser 
+cutting. </h5>
+           
           </div>
           <div className="text-center p-3 ps-md-5 w-75">
             <img
@@ -112,7 +110,7 @@ export default function index20(){
             />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Section 1 END */}
 
       {/* Section 3 */}
@@ -122,27 +120,56 @@ export default function index20(){
             className="pt-4 mobile-fonts-heading text-center"
             style={{ fontSize: '75px' }}
           >
-            Rolling & Forming Services
+           1. Machining Capabilities
           </h2>
 
-          <div>
-            <h2 className="fs-1" style={{ color: 'red' }}>1. Rolling</h2>
+          <h5
+              className="pt-4"
+              style={{
+                color: 'rgb(66, 66, 66)',
+                fontWeight: 400,
+                textAlign: 'justify',
+              }}
+            >
+              Our machine shop is outfitted with modern machines with turning diameter up to two meters to ensure precision 
+              in component finishing. 
+               </h5>
 
-            <h2 className="fs-4 fw-normal p-3 pt-4">
-              We also specialise in a rolling service, which allows for:
-            </h2>
+          <div className="pt-3">
+            <h2 className="fs-1" style={{ color: 'red' }}>Key Equipment : </h2>
+
+            <ul className="pt-2">
+              <li className="fs-3">NC turning centers</li>
+              <li className="fs-3">Horizontal boring machine</li>
+              <li className="fs-3">Radial drilling machines up to 2.5 Mtr. arm lenth.</li>
+              <li className="fs-3">Surface grinders.</li>
+            </ul>
+
+
+            <h2 className="fs-1" style={{ color: 'red' }}>Services : </h2>
+
+            <ul className="pt-2">
+              <li className="fs-3">Precision turning and boring</li>
+              <li className="fs-3">Threading and facing </li>
+              <li className="fs-3">Machining of large components (up to 2 Mtr. diameter). </li>
+              <li className="fs-3">Tolerance accuracy as per ISO and ASME standards 
+              </li>
+            </ul>
+
+
+            
 
             <div className="d-flex flex-column-reverse flex-md-column">
               <div className="d-md-flex pt-2">
                 <img
-                  src="/images/fabrication/Rolling.jpg"
+                  src="/images/fabrication/image1.jpg"
                   alt="Rolling Service"
                   layout="responsive"
                   
                   className="w-100 p-3"
                 />
                 <img
-                  src="/images/fabrication/Rolling2.jpg"
+                  src="/images/fabrication/image2.jpg"
                   alt="Rolling Service 2"
                   layout="responsive"
                  
@@ -154,33 +181,7 @@ export default function index20(){
             </div>
           </div>
 
-          <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>2. Forming:</h2>
-
-            <h2 className="fs-4 fw-normal p-3 pt-4">
-              In addition to rolling, we also can provide forming services to allow for more complex shapes:
-            </h2>
-
-            <div className="">
-              <div className="d-md-flex pt-2">
-                <img
-                  src="/images/fabrication/Forming.jpg"
-                  alt="Forming Service"
-                  layout="responsive"
-                  
-                  className="w-100 p-3"
-                />
-                <img
-                  src="/images/fabrication/Forming2.jpg"
-                  alt="Forming Service 2"
-                  layout="responsive"
-                 
-                  className="w-100 p-3"
-                />
-                <div className="w-100"></div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
 
@@ -193,19 +194,28 @@ export default function index20(){
             className="pt-4 mobile-fonts-heading text-center"
             style={{ fontSize: '75px' }}
           >
-            Machining Services
+            2. Pipe Rolling and Bending 
           </h2>
           <h2 className="fs-4 fw-normal p-3 pt-4">
-            Produce work using the machines below:
+          We specialize in rolling of pipes and plates up to six meter single length to meet custom radius and diameter 
+          specifications for industrial piping and pressure vessels.
           </h2>
 
           <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>1. Turning</h2>
+            <h2 className="fs-1" style={{ color: 'red' }}>Capabilities:</h2>
+
+            <ul className="pt-2">
+              <li className="fs-3">Rolling of carbon steel, stainless steel, and alloy steel pipes </li>
+              <li className="fs-3">Pipe diameters from [400 mm to 2 Mtr], wall thickness up to 35 mm. </li>
+              <li className="fs-3">CNC-controlled pipe bending for tight radius and complex geometries </li>
+              <li className="fs-3">Plate rolling up to 35 mm thick. 
+              </li>
+            </ul>
 
             <div className="d-flex flex-column-reverse flex-md-column">
               <div className="d-md-flex pt-2">
                 <img
-                  src="/images/fabrication/Metal_Turning.jpg"
+                  src="/images/fabrication/image3.jpg"
                   alt="Turning Service"
                   layout="responsive"
                   
@@ -216,77 +226,261 @@ export default function index20(){
               </div>
 
               <div className="p-3 pt-0">
-                <h2 className="fs-4 fw-normal pt-3">Centrifugal Cylinder Casting</h2>
+                <h2 className="fs-4 fw-normal pt-3">Applications include Coal Mill Body and internals along with stainless steel ducting systems. </h2>
               </div>
             </div>
           </div>
 
-          <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>2. Milling:</h2>
-
-            <h2 className="fs-4 fw-normal p-3 pt-4">
-              In addition to rolling, we also can provide forming services to allow for more complex shapes:
-            </h2>
-
-            <div className="">
-              <div className="d-md-flex pt-2">
-                <img
-                  src="/images/fabrication/Milling.jpg"
-                  alt="Milling Service"
-                  layout="responsive"
-                  
-                  className="w-100 p-3"
-                />
-                <div className="w-100"></div>
-                <div className="w-100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>3. Drilling</h2>
-
-            <div className="">
-              <div className="d-md-flex pt-2">
-                <img
-                  src="/images/fabrication/Drilling.jpg"
-                  alt="Drilling Service"
-                  layout="responsive"
-                  
-                  className="w-100 p-3"
-                />
-                <div className="w-100"></div>
-                <div className="w-100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>4. Boring</h2>
-
-            <h2 className="fs-4 fw-normal p-3 pt-4">
-              We provide work for all machining capacity for any engineering needs to assure accuracy and reliability.
-            </h2>
-
-            <div className="">
-              <div className="d-md-flex pt-2">
-                <img
-                  src="/images/fabrication/metal_boring.jpg"
-                  alt="Boring Service"
-                  layout="responsive"
-                  
-                  className="w-100 p-3"
-                />
-                <div className="w-100"></div>
-                <div className="w-100"></div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
 
       {/* Section: Steel Fabrication */}
-      <div className="p-md-5 mt-3">
+
+
+
+      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="px-md-5">
+          <h2
+            className="pt-4 mobile-fonts-heading text-center"
+            style={{ fontSize: '75px' }}
+          >
+            3. Welding and Fabrication 
+          </h2>
+          <h2 className="fs-4 fw-normal p-3 pt-4">
+          Welding is a core strength of our fabrication services, carried out by qualified welders in accordance with 
+          international codes (ASME, AWS, EN). 
+          </h2>
+
+          <div className="pt-3">
+            <h2 className="fs-1" style={{ color: 'red' }}>Welding Processes : </h2>
+
+            <ul className="pt-2">
+              <li className="fs-3">SMAW (Shielded Metal Arc Welding)</li>
+              <li className="fs-3">GMAW/MIG (Gas Metal Arc Welding) </li>
+              <li className="fs-3">SAW (Submerged Arc Welding) </li>
+              
+            </ul>
+
+            <h2 className="fs-1" style={{ color: 'red' }}>Highlights : </h2>
+
+<ul className="pt-2">
+  <li className="fs-3">Welding of Carbon Steel and Stainless Steel materials </li>
+  <li className="fs-3">Certified welders and WPS/PQR documentation </li>
+  <li className="fs-3">Pre-heating, post-weld heat treatment (PWHT) facilities  </li>
+  <li className="fs-3">In-house NDT inspection (UT, RT, MPI, DPI) 
+  </li>
+  
+</ul>
+
+            <div className="d-flex flex-column-reverse flex-md-column">
+              <div className="d-md-flex pt-2">
+                <img
+                  src="/images/fabrication/image4.jpg"
+                  alt="Turning Service"
+                  layout="responsive"
+                  
+                  className="w-100 p-3"
+                />
+                <div className="w-100"></div>
+                <div className="w-100"></div>
+              </div>
+
+              
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+
+
+
+      {/* new  */}
+
+
+      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="px-md-5">
+          <h2
+            className="pt-4 mobile-fonts-heading text-center"
+            style={{ fontSize: '75px' }}
+          >
+            4. Cutting Facilities 
+          </h2>
+          <h2 className="fs-4 fw-normal p-3 pt-4">
+          We utilize high-precision cutting technologies to ensure clean edges, accurate dimensions, and minimal material 
+waste. 
+          </h2>
+
+          <div className="pt-3">
+            <h2 className="fs-1" style={{ color: 'red' }}>Cutting Technologies : </h2>
+
+            <ul className="pt-2">
+              <li className="fs-3">CNC plasma cutting</li>
+              <li className="fs-3">Oxy-fuel cutting </li>
+              <li className="fs-3">Laser cutting (for precision sheet metal work)  </li>
+              <li className="fs-3">Hydraulic shearing  </li>
+              
+            </ul>
+
+            <h2 className="fs-1" style={{ color: 'red' }}>Capabilities : </h2>
+
+<ul className="pt-2">
+  <li className="fs-3">Plate cutting up to [ 40 mm thickness]  </li>
+  <li className="fs-3">Cutting for structural steel, pressure parts, and custom profiles </li>
+  <li className="fs-3">Template and contour cutting for custom fabrication  </li>
+  
+</ul>
+
+            <div className="d-flex flex-column-reverse flex-md-column">
+              <div className="d-md-flex pt-2">
+                
+                <div className="w-100"></div>
+                <div className="w-100"></div>
+              </div>
+
+              
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+
+      {/* new  */}
+
+
+      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="px-md-5">
+          <h2
+            className="pt-4 mobile-fonts-heading text-center"
+            style={{ fontSize: '75px' }}
+          >
+            5. Facility Infrastructure 
+          </h2>
+          
+
+          <div className="pt-3">
+            
+
+            <ul className="pt-2">
+              <li className="fs-3">Covered Shop Floor Area: [50000 sq. ft.] + 40000 sq feet + 35000 sq Feet.</li>
+              <li className="fs-3">Material Handling: Overhead cranes (up to 5 tons), forklifts, mobile cranes </li>
+              <li className="fs-3">Power Backup: Diesel generators to ensure uninterrupted operations</li>
+              <li className="fs-3">Layout: Segregated bays for machining, welding, rolling, and final assembly</li>  
+            </ul>
+
+           
+
+
+            <div className="d-flex flex-column-reverse flex-md-column">
+              <div className="d-md-flex pt-2">
+               
+                <div className="w-100"></div>
+                <div className="w-100"></div>
+              </div>
+
+              
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+
+        {/* nwe  */}
+
+
+        <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="px-md-5">
+          <h2
+            className="pt-4 mobile-fonts-heading text-center"
+            style={{ fontSize: '75px' }}
+          >
+            6. Quality Assurance 
+          </h2>
+          <h2 className="fs-4 fw-normal p-3 pt-4">
+          We maintain a robust quality management system supported by:  
+          </h2>
+
+          <div className="pt-3">
+            
+
+            <ul className="pt-2">
+              <li className="fs-3">ISO 9001:2015 certification </li>
+              <li className="fs-3">In-house inspection team and third-party inspection (TPI) support  </li>
+              <li className="fs-3">Material traceability and documentation   </li>
+              <li className="fs-3">Calibrated measuring instruments and testing tools</li>
+              
+            </ul>
+            <div className="d-flex flex-column-reverse flex-md-column">
+              <div className="d-md-flex pt-2">
+               
+                <div className="w-100"></div>
+                <div className="w-100"></div>
+              </div>
+
+              
+            </div>
+            
+
+
+
+           
+          </div>
+
+         
+        </div>
+      </div>
+
+
+
+
+      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="px-md-5">
+          <h2
+            className="pt-4 mobile-fonts-heading text-center"
+            style={{ fontSize: '75px' }}
+          >
+            7. Safety and Compliance 
+          </h2>
+          <h2 className="fs-4 fw-normal p-3 pt-4">
+          Safety is integral to our operations:
+          </h2>
+
+          <div className="pt-3">
+            
+
+            <ul className="pt-2">
+              <li className="fs-3">Regular training and PPE for staff  </li>
+              <li className="fs-3">Fire protection systems and emergency response protocols </li>
+              <li className="fs-3">Compliance with OSHA, local labor laws, and environmental guidelines  </li> 
+            </ul>
+
+            
+
+
+            <h2 className="fs-4 fw-normal p-3 pt-4 pb-5">
+            Our fabrication facility is a one-stop solution for heavy and precision fabrication requirements. With a blend of 
+modern technology, experienced workforce, and adherence to international standards, we deliver components 
+and assemblies that meet the highest levels of reliability, performance, and quality.
+          </h2>
+           
+          </div>
+
+         
+        </div>
+      </div>
+
+
+      
+
+
+
+      {/* <div className="p-md-5 mt-3">
         <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
           <div className="w-100 p-3">
             <h2 className="pt-md-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
@@ -318,10 +512,10 @@ export default function index20(){
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section: Our Steel Fabrication Services */}
-      <div className="p-3 px-md-5">
+      {/* <div className="p-3 px-md-5">
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -353,10 +547,10 @@ export default function index20(){
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section: Pipe Fabrication */}
-      <div className="p-3 px-md-5">
+      {/* <div className="p-3 px-md-5">
         <div className="px-md-5">
           <h2 className="fs-4 fw-normal py-3 pt-4 text-start">
             Other than tool and machine fabrication, BMW steels supplies pipes to the mining, and cement power plants industries as well. We tend to maintain the reliability and durability of our pipes too.
@@ -432,45 +626,10 @@ export default function index20(){
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section: Pipe Features */}
-      <div className="px-md-5 p-3">
-        <h2 className="px-md-3 fs-1 my-3 py-4 text-center">
-          Pipe Features:
-        </h2>
-        <div className="d-md-flex container">
-          <div className="px-md-3 table-responsive w-100">
-            <table className="table">
-              <thead className="thead-dark">
-                {/* <tr>
-                  <th style={{ backgroundColor: '#F48221', color: 'white' }} colspan="9" scope="col" className="text-center">
-                    Typical Composition
-                  </th>
-                </tr> */}
-              </thead>
-              <tbody>
-                <tr style={{ border: '2px solid white' }}>
-                  <td style={{ backgroundColor: '#f48221' }}>Perfect Fit</td>
-                  <td style={{ backgroundColor: '#f48221' }}>We cut and shape pipes carefully so they fit well.</td>
-                </tr>
-                <tr style={{ border: '2px solid white' }}>
-                  <td style={{ backgroundColor: '#e7e7e9' }}>Handles High Pressure</td>
-                  <td style={{ backgroundColor: '#e7e7e9' }}>Our pipes can handle heat and pressure.</td>
-                </tr>
-                <tr style={{ border: '2px solid white' }}>
-                  <td style={{ backgroundColor: '#f48221' }}>Material Choices</td>
-                  <td style={{ backgroundColor: '#f48221' }}>Choose from MS, SS, alloy steel, or custom materials.</td>
-                </tr>
-                <tr style={{ border: '2px solid white' }}>
-                  <td style={{ backgroundColor: '#e7e7e9' }}>Longer Life</td>
-                  <td style={{ backgroundColor: '#e7e7e9' }}>We can add special coatings to protect pipes from rust and damage.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+    
     </div>
   
 
