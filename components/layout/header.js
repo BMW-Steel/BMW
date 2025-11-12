@@ -13,6 +13,7 @@ export default function Header() {
 
   return (
     
+    
     <nav className="navbar navbar-expand-lg bg-body-tertiary py-0" style={{ backgroundColor: "black" }}>
       <GoogleTranslate/>
       <div className="container-fluid d-flex justify-content-around align-items-center" style={{ backgroundColor: "black" }}>
@@ -35,14 +36,7 @@ export default function Header() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link
-                className={`nav-link white now ${isActive('/Fabrication') ? 'active' : ''}`}
-                href="/Fabrication"
-              >
-                Fabrication
-              </Link>
-            </li>
+            
 
             <li className="nav-item">
               <Link
@@ -82,6 +76,22 @@ export default function Header() {
                 Other Products
               </a>
               <ul className="dropdown-menu">
+
+                <li className="nav-item">
+              <Link
+                className={`dropdown-item${isActive('/Fabrication') ? 'active' : ''}`}
+                href="/Fabrication"
+              >
+                Fabrication
+              </Link>
+            </li>
+
+             <li>
+                  <hr className="dropdown-divider" />
+                </li>
+
+
+
                 <li>
                   <Link
                     className={`dropdown-item ${isActive('/ResearchDevelopmentDepartment') ? 'active' : ''}`}
@@ -134,6 +144,19 @@ export default function Header() {
                 Contact Us
               </Link>
             </li>
+
+
+             <li className="nav-item">
+              <Link
+                className={`nav-link white now ${isActive('/Blogs') ? 'active' : ''}`}
+                href="/Blogs"
+              >
+               Blogs
+              </Link>
+            </li>
+
+
+            
           </ul>
         </div>
 
