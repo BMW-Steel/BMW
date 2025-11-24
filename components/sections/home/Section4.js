@@ -21,7 +21,7 @@ const VideoSection = () => {
       poster="/images/section-4.jpg"
       onClick={playVid}
       id="myVideo"
-      src="banner-video/BMW0.3.mp4"
+      src="images/banner-video/BMW0.3.mp4"
       type="video/mp4"
       loop
       crossOrigin="anonymous"
