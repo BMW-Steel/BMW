@@ -78,11 +78,7 @@ export default function Footer() {
                     Home
                   </Link>
                 </p>
-                <p>
-                  <Link href="/Fabrication" className="text-reset text-decoration-none now">
-                    Fabrication
-                  </Link>
-                </p>
+                
                 <p>
                   <Link href="/AluminiaCeramic" className="text-reset text-decoration-none now">
                     Alumina Ceramic
