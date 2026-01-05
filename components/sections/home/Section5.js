@@ -39,7 +39,7 @@ export default function Section5(){
             textAlign: 'justify',
           }}
         >
-          BMW extracts and grades basalt with a unique structure for maximum erosion resistance. The basalt is melted at 1325°C and cast into molds, followed by controlled heat treatment to enhance re-crystallization. This process yields dense, inert, and highly erosion-resistant products with zero porosity, thanks to advanced processing and quality control systems.
+          BMW extracts and grades basalt with a unique structure for maximum erosion resistance. The basalt is melted at 1325°C and cast into molds  followed by controlled heat treatment to enhance re-crystallization. This process yields dense, inert, and highly erosion-resistant products with zero porosity, thanks to advanced processing and quality control systems.
         </h4>
         <div className="d-flex m-auto m-md-0">
           <Link
