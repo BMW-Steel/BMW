@@ -40,7 +40,7 @@ const Section4 = () => {
     <div className="p-md-5 py-md-0 p-4" style={{ backgroundColor: "#F4F4F4" }}>
       <div className="d-lg-flex p-md-5">
         <div className="w-100">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: "75px" }}>
+          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: "50px" }}>
           Our Sensor Based  <br />Software Development Company
           </h2>
         </div>

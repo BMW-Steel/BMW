@@ -70,7 +70,7 @@ export default function Index1(){
   <div className="text-center px-md-5 px-2">
     <h2
       className="pt-4 mobile-fonts-heading"
-      style={{ fontSize: '75px' }}
+      style={{ fontSize: '60px' }}
     >
       Our Cast Basalt Manufacturing Plant
     </h2>

@@ -5,7 +5,7 @@ export default function Index7(){
     <div>
       {/* Section 1 */}
       <div className="p-md-5 mt-3">
-        <h2 className="pt-md-4 px-md-5 mobile-fonts-heading" style={{ fontSize: '75px' }}>
+        <h2 className="pt-md-4 px-md-5 mobile-fonts-heading" style={{ fontSize: '60px' }}>
           BMW Basaltic Mineral Fertilizer
         </h2>
         <div className="d-lg-flex px-md-5 justify-content-center align-items-center">

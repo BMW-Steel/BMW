@@ -5,7 +5,7 @@ export default function Section5(){
         <>
         <div className="py-md-5 px-2">
   <div className="container py-2 py-md-5">
-    <h2 className="pt-4 mobile-fonts-heading text-center" style={{ fontSize: '75px', color: 'red' }}>
+    <h2 className="pt-4 mobile-fonts-heading text-center" style={{ fontSize: '70px', color: 'red' }}>
       Powering Industries with Precision Manufacturing
     </h2>
   </div>

@@ -6,7 +6,7 @@ export default function Index5(){
       {/* BANNER */}
       <div className="pt-md-3">
         <div className="text-center px-md-5 px-2">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
+          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
             Chemically Bonded Compound Series (CBC)
           </h2>
         </div>

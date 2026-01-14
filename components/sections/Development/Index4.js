@@ -6,7 +6,7 @@ export default function Index4(){
       {/* BANNER */}
       <div className="">
         <div className="text-center px-md-5 px-2">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
+          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
             Research & Development Department
           </h2>
         </div>

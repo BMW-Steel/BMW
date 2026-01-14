@@ -5,7 +5,7 @@ export default function Index2(){
         
 <div className="py-md-5">
   <div className="text-center px-md-5 px-2">
-    <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
+    <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
       Our Fused Alumina Powder and Fused Alumina Abrasive manufacturing
       plant
     </h2>

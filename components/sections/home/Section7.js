@@ -132,7 +132,7 @@ export default function Section7(){
     </div>
     <div className="w-100 pe-md-5">
       <div className="accordion p-2" id="accordionExample">
-      <h2 className="pt-4 mobile-fonts-heading text-center pb-3x" style={{ fontSize: '75px' }}>
+      <h2 className="pt-4 mobile-fonts-heading text-center pb-3x" style={{ fontSize: '50px' }}>
         Our Assurance
       </h2>
        <h5 className="faq-2 p-2 ps-4">1. We guarantee exceeding customer expectations through professional service.</h5>

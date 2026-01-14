@@ -56,19 +56,19 @@ export default function Index8(){
         <div className="p-lg-5 p-3 d-lg-flex">
           <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
             <img src="images/contact-us/span.w-32.png" alt="" />
-            <h2 className="pt-4 fs-3">sales@bmwsteels .com</h2>
+            <h2 className="pt-4 fs-3"  style={{ fontSize:'25px'}}>sales@bmwsteels .com</h2>
             <h4 className="pt-3 fw-normal">We aim to respond within 24 hours.</h4>
           </div>
 
           <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
             <img src="images/contact-us/span.w-32 (1).png" alt="" />
-            <h2 className="pt-4">BMW Steels Ltd</h2>
+            <h2 className="pt-4" style={{ fontSize:'25px'}}>BMW Steels Ltd</h2>
             <h4 className="pt-3 fw-normal">55, Pritam Road, Dalanwala, Dehradun-248001</h4>
           </div>
 
           <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
             <img src="images/contact-us/span.w-32 (2).png" alt="" />
-            <h2 className="pt-4">+91-96390 17070</h2>
+            <h2 className="pt-4" style={{ fontSize:'25px'}}>+91-96390 17070</h2>
             <h4 className="pt-3 fw-normal">Our calls hours are Mon-sat 9am-6:30pm.</h4>
           </div>
         </div>
@@ -79,8 +79,8 @@ export default function Index8(){
       <div className="px-lg-5">
         <div className="px-md-5 p-3 d-lg-flex">
           <div className="w-100">
-            <h2 className="mobile-fonts-heading" style={{ fontSize: '90px' }}>
-              Connect with Us for Business Inquiries and Support.
+            <h2 className="mobile-fonts-heading" style={{ fontSize: '50px' }}>
+              Connect with Us
             </h2>
             <h4 className="pt-3 fw-normal">
               We value your interest and are here to help! Whether you have questions about our services, need support, or want to explore partnership opportunities, please don't hesitate to reach out.

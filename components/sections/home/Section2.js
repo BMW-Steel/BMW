@@ -6,7 +6,7 @@ export default function Section2(){
   <div className="d-lg-flex m-md-5 p-3 p-md-5" style={{ backgroundColor: "#F4F4F4", borderRadius: "20px" }}>
     <div className="p-md-5 w-100">
       <h3 className="mobile-fonts-heading-sub" style={{ color: "red" }}>WHO WE ARE</h3>
-      <h2 className="pt-md-4 mobile-fonts-heading" style={{ fontSize: "75px" }}>
+      <h2 className="pt-md-4 mobile-fonts-heading" style={{ fontSize: "50px" }}>
         The company with innovative solutions
       </h2>
 
