@@ -137,7 +137,7 @@ export default function Section7(){
       </h2>
        <h5 className="faq-2 p-2 ps-4">1. We guarantee exceeding customer expectations through professional service.</h5>
 <br/>
-       <h5 className="faq-2 p-2 ps-4">2. We guarantee world class quality through ‘Make in India’ products</h5>
+       <h5 className="faq-2 p-2 ps-4">2. We guarantee world clas quality throug ‘Make in India’ products</h5>
        <br/>
        <h5 className="faq-2 p-2 ps-4">3. We guarantee productivity improvement, energy saving, cost efficiency</h5>
        <br/>
