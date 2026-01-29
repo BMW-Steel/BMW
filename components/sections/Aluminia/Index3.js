@@ -78,13 +78,13 @@ increasing the densification.
         <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
           <div className="w-100 p-3">
             <h2 className="pt-md-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
-              Alumina Ceramic (ALUMINA92®)
+              Alumina Ceramic (ALUMINA92&#8482;)
             </h2>
             <h5
               className="pt-4"
               style={{ color: 'rgb(66, 66, 66)', fontWeight: '400', textAlign: 'justify' }}
             >
-              BMW registered brand for Alumina ceramic is ALUMINA92®. It is sintered and fused Alumina Powder. It is very hard, wear-resistant, and corrosion-resistant ceramic material. It is valued for its outstanding strength against impact, resistance to acid and alkali and wear properties.
+              BMW registered brand for Alumina ceramic is ALUMINA92&#8482;. It is sintered and fused Alumina Powder. It is very hard, wear-resistant, and corrosion-resistant ceramic material. It is valued for its outstanding strength against impact, resistance to acid and alkali and wear properties.
             </h5>
             <h5
               className="pt-4"

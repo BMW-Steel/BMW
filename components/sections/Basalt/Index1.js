@@ -183,7 +183,7 @@ export default function Index1(){
         className="pt-md-4 mobile-fonts-heading"
         style={{ fontSize: '75px' }}
       >
-        Cast Basalt (BASALT450®)
+        Cast Basalt (BASALT450&#8482;)
       </h2>
       <h5
         className="pt-4"
@@ -226,7 +226,7 @@ export default function Index1(){
       <div className="pt-2">
         <h3>Cast Basalat</h3>
         <a
-          href="pdf/CFM Catalogue.pdf"
+          href="pdf/Cast Basalt.pdf"
           download=""
           style={{ color: 'red', textDecoration: 'none' }}
         >
