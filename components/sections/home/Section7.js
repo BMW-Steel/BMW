@@ -10,8 +10,7 @@ export default function Section7(){
     </h2>
     <div className="px-md-5 text-start">
       <h4 style={{ color: 'rgb(66, 66, 66)', fontWeight: 400 }}>
-        BMW Steels Ltd. operates state-of-the-art manufacturing plants equipped with cutting-edge technologies in Roorkee Bhagwanpur,assembly, and the production of high-quality wear-resistant and coal flow management solutions, ensuring precision and efficiency at every step.
-      </h4>
+       BMW Steels Ltd. operates state-of-the-art manufacturing plants equipped with cutting-edge technologies in Roorkee and Bhagwanpur. The assembly and production of high-quality wear-resistant and coal flow management solutions ensure precision and efficiency at every step.</h4>
     </div>
   </div>
 

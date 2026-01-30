@@ -39,8 +39,9 @@ export default function Section5(){
             textAlign: 'justify',
           }}
         >
-          BMW extracts and grades basalt with a unique structure for maximum erosion resistance. The basalt is melted at 1325°C and cast into molds  followed by controlled heat treatment to enhance re-crystallization. This process yields dense, inert, and highly erosion-resistant products with zero porosity, thanks to advanced processing and quality control systems.
-        </h4>
+          BMW extracts and grades basalt with a unique structure for maximum erosion resistance. The basalt is melted at 1325°C and cast into molds, followed by controlled heat treatment to enhance recrystallization. This process yields dense, inert, and highly erosion-resistant products with zero porosity, thanks to advanced processing and quality control systems.
+
+          </h4>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -84,8 +85,9 @@ export default function Section5(){
             textAlign: 'justify',
           }}
         >
-          BMW sources high-grade sintered and fine-ground alumina with a special microstructure for optimal erosion resistance. The alumina powder is mixed with additives and water in a ball mill, then dried in a spray dryer to form granules. These granules are pressed into shape and fired in a tunnel furnace at 1550°C. Each batch undergoes rigorous quality checks to ensure top quality.
-        </h4>
+          BMW sources high-grade sintered and finely ground alumina with a special microstructure for optimal erosion resistance. The alumina powder is mixed with additives and water in a ball mill, then dried in a spray dryer to form granules. These granules are pressed into shape and fired in a tunnel furnace at 1550°C. Each batch undergoes rigorous quality checks to ensure top quality.
+
+          </h4>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -176,7 +178,8 @@ export default function Section5(){
             textAlign: 'justify',
           }}
         >
-         CBC has an advantage for all the grades about flexibility of use. CBCTM can be employed to install new linings with difficult profiles and on the roofs too using few simple lining tools. Recommended CBCTM lining thickness depends on the job requirements and application conditions. The thickness of the lining can be recommended after technical evaluation of BMW at the lining site. Curing time of CBCTM series of compounds is 48 hours.</h4>
+         The CBC series offers flexibility of use across all grades. CBCTM can be employed to install new linings with complex profiles as well as on roofs, using only a few simple lining tools. The recommended CBCTM lining thickness depends on the job requirements and application conditions. Final lining thickness can be recommended after technical evaluation by BMW at the lining site. The curing time for the CBCTM series of compounds is 48 hours.
+</h4>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"

@@ -41,7 +41,7 @@ const Section4 = () => {
       <div className="d-lg-flex p-md-5">
         <div className="w-100">
           <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: "50px" }}>
-          Our Sensor Based  <br />Software Development Company
+          Our Sensor Based  <br/>Software Development Company
           </h2>
         </div>
         <div className="w-100 d-flex justify-content-center align-items-center">
@@ -53,9 +53,8 @@ const Section4 = () => {
               textAlign: "justify",
             }}
           >
-            The Coal Flow Monitoring System is a real-time system that continuously
-            measures and balances the mass flow, temperature, and velocity of coal
-            in each pipe using advanced microwave.
+            The Coal Flow Monitoring System is a real-time system that continuously measures and balances the mass flow, temperature, and velocity of coal in each pipe using advanced microwave technology.
+
             <br />
             <a
             className="btn btn-danger btn-lg mt-4"

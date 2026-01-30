@@ -148,8 +148,9 @@ export default function Section5(){
           Certifications and Authorizations
         </h2>
         <h4 className="pt-3 pb-3 w-75" style={{ color: 'rgb(66, 66, 66)', fontWeight: 400, textAlign: 'justify' }}>
-          Because we are a transparent company, which puts price on quality, we show you a series of certificates we obtained.
-        </h4>
+          Because we are a transparent company that places priority on quality, we are pleased to present a series of certifications we have obtained.
+
+          </h4>
       </div>
       <img
         src="images/file-10.jpg"
@@ -194,8 +195,9 @@ export default function Section5(){
           Certifications and Authorizations
         </h2>
         <h4 className="pt-3 pb-3" style={{ color: 'rgb(66, 66, 66)', fontWeight: 400, textAlign: 'justify' }}>
-          Because we are a transparent company, which puts price on quality, we show you a series of certificates we obtained.
-        </h4>
+         Because we are a transparent company that places priority on quality, we are pleased to present a series of certifications we have obtained.
+
+</h4>
       </div>
       <div className="carousel-inner w-100 m-auto ps-4">
         <div className="carousel-item active text-center">

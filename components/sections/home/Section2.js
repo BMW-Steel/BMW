@@ -29,11 +29,7 @@ export default function Section2(){
       </h2>
 
       <h4 style={{ color: "rgb(66, 66, 66)", fontWeight: "400" }}>
-        BMW Steels Ltd. was founded in 1990. Our head Office is in Dehradun, Uttarakhand, India. We offer state-of-the-art
-        Engineering solutions for Coal Power Plants, Steel Plants, and Cement Plants. We always visualize the special needs of
-        our customers. Our Engineering Solutions are aided by AI solutions to achieve modal-based designs & simulation. We
-        always believe in quality & efficiency in our products. Our company has an experience of 35+ years in the field of Coal
-        Conveying & Ash Conveying pipeline systems along with advanced engineering tools to collect accurate data for Coal flow.
+        BMW Steels Ltd. was founded in 1990. Our head office is in Dehradun, Uttarakhand, India. We offer state-of-the-art engineering solutions for coal power plants, steel plants, and cement plants. We understand the specific needs of our customers. Our engineering solutions are aided by AI technologies to achieve model-based designs and simulations. We strongly believe in quality and efficiency in our products. Our company has over 35 years of experience in the field of coal conveying and ash conveying pipeline systems, along with advanced engineering tools to collect accurate data for coal flow.
       </h4>
     </div>
 
