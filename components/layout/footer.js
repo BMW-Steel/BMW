@@ -134,10 +134,10 @@ export default function Footer() {
                   Sales@bmwsteels.com
                 </p>
                 <p className="now">
-                  <i className="fas fa-phone me-3"></i> +91-01 234 567 88
+                  <i className="fas fa-phone me-3"></i> +91-96390-17070
                 </p>
                 <p className="now">
-                  <i className="fas fa-print me-3"></i> +91-01 234 567 89
+                  <i className="fas fa-print me-3"></i> +91-98377-55569
                 </p>
               </div>
             </div>
