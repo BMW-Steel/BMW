@@ -203,7 +203,7 @@ export default function Index2(){
 <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
   <div className="w-100 p-3">
     <h2 className="mobile-fonts-heading" style={{ fontSize: '75px' }}>
-      Fused Aluimna Abrasive
+      Fused Alumina Abrasive
     </h2>
     <h5
       className="pt-4"

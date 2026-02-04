@@ -193,12 +193,8 @@ export default function Index1(){
           textAlign: 'justify',
         }}
       >
-        Cast Basalt is a durable and highly abrasion resistant material
-        produced by melting and reheating basalt rock. The process yields a
-        dense, lustrous coloured/black ceramic with exceptional hardness,
-        scoring 8 on the Mohs scale (diamond is 10). To achieve these
-        properties unique composition is required in Cast Basalt for
-        remarkable resistance to abrasion, friction and chemical wear.
+        Cast Basalt is a durable and highly abrasion-resistant material produced by melting and reheating basalt rock. The process yields a dense, lustrous, black-coloured ceramic with exceptional hardness, scoring 8 on the Mohs scale (diamond is 10). To achieve these properties, a unique composition is required in cast basalt, providing remarkable resistance to abrasion, friction, and chemical wear.
+
       </h5>
       <h5
         className="pt-4"
@@ -208,9 +204,8 @@ export default function Index1(){
           textAlign: 'justify',
         }}
       >
-        Unfortunately Indian basalt deposits lacs required chemical and
-        physical properties. To achieve world class Basalt product BMW
-        undertook a massive R&D activity.
+       Unfortunately Indian basalt deposits lacks required chemical and physical properties. To achieve world class Basalt product BMW undertook a massive R&D activity.
+
       </h5>
     </div>
     <div className="text-center p-3 ps-md-5">
@@ -368,15 +363,12 @@ export default function Index1(){
     <h2 className="fs-1">Typical Mechanical Properties of Cast Basalt</h2>
 
     <h2 className="fs-4 fw-normal pt-3">
-      Indian Basalt deposits does not have required chemistry so they lag in
-      achieving required physical Parameters.
+     Indian basalt deposits do not have the required chemistry, so they lag in achieving the required physical parameters.
+
     </h2>
 
     <h2 className="fs-4 fw-normal pt-3">
-      BMW Team has collected 750 samples from length and width of country’s
-      deposits. But no single stone could achieve the desired parameters.
-      Therefore Basalt sample from two or more stones are blended to achieve
-      required chemistry.
+      The BMW team has collected 750 samples from deposits across the length and breadth of the country. However, not a single stone could achieve the desired parameters. Therefore, basalt samples from two or more stones are blended to achieve the required chemistry.
     </h2>
   </div>
 </div>
@@ -506,16 +498,10 @@ export default function Index1(){
         3. Skid Pan Tiles
       </h2>
       <h2 className="fs-4 fw-normal p-3 pt-4">
-        In 1979, the Automotive Research Association of England tested Cast
-        Basalt Skid Pan tiles at their track, confirming their suitability
-        for automotive safety testing over six years. Today, the automotive
-        industry globally uses these specially designed tiles in
-        low-friction test facilities, including in India. BMW's Cast Basalt
-        tiles are widely accepted for their durability and smoothness.
-        Available in polished or unpolished forms, they maintain surface
-        smoothness due to high wear resistance. Standard dimensions are
-        200x200mm with thicknesses between 25mm to 40mm, with curved options
-        for circular tracks.
+        In 1979, the Automotive Research Association of England tested cast basalt skid pan tiles at their track, confirming their suitability for automotive safety testing over six years. Today, the automotive industry worldwide uses these specially designed tiles in low-friction test facilities, including in India.
+BMW’s cast basalt tiles are widely accepted for their durability and smoothness. Available in polished or unpolished forms, they maintain surface smoothness due to their high wear resistance.
+Standard dimensions are 200 × 200 mm, with thicknesses ranging from 25 mm to 40 mm, along with curved options for circular tracks.
+
       </h2>
     </div>
   </div>
@@ -539,16 +525,10 @@ export default function Index1(){
         4. Cast Basalt Lined Equipment
       </h2>
       <h2 className="fs-4 fw-normal p-3 pt-4">
-        With our innovative approaches, we have established ourselves as a
-        reliable manufacturer of Cast Basalt in Ash Pipeline Bends. These
-        bends find wide usage in various areas such as pipelines for
-        hydraulic, chemicals, electric power, mining, metallurgy, coal, and
-        many more. Cast Basalt Liners have outstanding corrosion and
-        abrasive resistance; as a result, they easily withstand high working
-        pressures. Enclosed with cement mortar inside metal pipes, the
-        liners prevent inner wall of the pipes from early wearing. Moreover,
-        flexible Joints of our Ash Pipeline facilitate quick fitting &
-        connection and smoothness in performance.
+        With our innovative approaches, we have established ourselves as a reliable manufacturer of cast basalt ash pipeline bends. These bends are widely used in various sectors such as hydraulic pipelines, chemical industries, electric power, mining, metallurgy, coal handling, and many more.
+Cast basalt liners offer outstanding corrosion and abrasion resistance; as a result, they easily withstand high working pressures. Enclosed with cement mortar inside metal pipes, the liners prevent early wear of the inner pipe walls.
+Moreover, the flexible joints of our ash pipeline system facilitate quick fitting, secure connections, and smooth performance.
+
       </h2>
     </div>
   </div>
@@ -564,50 +544,44 @@ export default function Index1(){
     </h2>
 
     <h2 className="fs-4 fw-normal p-3 pt-4 text-start">
-      Cast basalt lining is an effective solution for protecting equipment
-      in the coal industry, especially in coal preparation plants and
-      coal-fired power plants. Its high wear resistance and durability make
-      it ideal for conditions of intense abrasive and chemical exposure.
+      Cast basalt lining is an effective solution for protecting equipment in the coal industry, especially in coal preparation plants and coal-fired power plants. Its high wear resistance and durability make it ideal for conditions involving intense abrasion and chemical exposure.
+
     </h2>
 
     <h2 className="fs-4 fw-normal p-3 pt-4 text-start">
-      In general, the choice of lining material depends on the specific
-      operating conditions and equipment requirements. Cast basalt lining is
-      excellent for conditions with high abrasiveness and chemical exposure.
+      In general, the choice of lining material depends on specific operating conditions and equipment requirements. Cast basalt lining is excellent for environments with high abrasiveness and chemical exposure.
+
     </h2>
 
     <div>
       <h2 className="fs-1">Usage of cast basalt lining in the coal industry</h2>
 
-      <h2 className="fs-3 pt-2">Wear in the coal industry:</h2>
+      <h2 className="fs-3 pt-2">Wear in the Coal industry:</h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Abrasive wear :</li>
-        Very good against abrasive wear of equipment due to friction by Fly
-        Ash and Ash Slurry.
+Provides excellent resistance against abrasive wear caused by friction from fly ash and ash slurry.
       </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Erosive wear :</li>
-        Protects surface degradation from the flow of Fly Ash and Ash slurry
-        particles.
+        Protects surfaces from degradation due to the flow of fly ash and ash slurry particles.
+
       </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Corrosive wear :</li>
-        Effective at arresting corrosive wear due to Chemical effects from
-        chemical storage, and especially due to effect of SOx.
+        Effective in reducing corrosive wear caused by chemical exposure, especially due to the effects of SOx.
       </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Impact wear :</li>
-        Basalt is poor against impact wear so it should be avoided against
-        impact.
+        Cast basalt performs poorly under impact conditions; therefore, it should be avoided in applications involving heavy impact.
       </h2>
     </div>
 
     <div className="pt-3">
-      <h2 className="fs-1">Technological equipment protected by cast basalt lining: </h2>
+      <h2 className="fs-1">Technological Equipment Protected by Cast Basalt Lining </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Conveyors and transport systems :</li>
@@ -617,20 +591,19 @@ export default function Index1(){
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Pipes and chutes :</li>
-        Used for transporting Fly Ash dust and Ash Slurry Lines for ash 
-handling. The lining prevents wear and corrosion.
+        Used for transporting fly ash dust and ash slurry lines. The lining prevents wear and corrosion.
+
       </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Bunkers and silos :</li>
-        Protective lining for storage of coal and feeder for processing. 
-Cast basalt reduces wear on walls and the bottom of equipment
+       Provides protective lining for coal storage and feeder systems. Cast basalt reduces wear on equipment walls and bottoms.
       </h2>
 
       <h2 className="fs-4 pt-2">
         <li style={{ color: 'red' }}>Cyclones and separators :</li>
-        Equipment for particle segregation of pulverized coal. 
-        Cast basalt increases the lifespan of internal components.
+        Used for particle segregation of pulverized coal. Cast basalt increases the lifespan of internal components.
+
       </h2>
     </div>
   </div>
@@ -843,21 +816,14 @@ Cast basalt reduces wear on walls and the bottom of equipment
         Basalt Fiber:
       </h2>
       <h2 className="fs-4 fw-normal pt-4">
-        BMW has addressed the development of a potential new form of Basalt
-        i.e. Basalt fiber. Basalt Fiber is created by fusing basalt rock and
-        then fibers are drawn. These fibers have heat stability, thermal and
-        sound insulation qualities, durability and vibration resistance. It
-        contains filaments that are classified as mineral fibers. They are
-        superior to most of the fibers in mechanical & chemical- physical
-        qualities
+        BMW has focused on the development of a potential new form of basalt, i.e., basalt fiber. Basalt fiber is created by fusing basalt rock and then drawing it into fibers. These fibers offer heat stability, thermal and sound insulation properties, durability, and vibration resistance.
+Basalt fiber contains filaments that are classified as mineral fibers. They are superior to most other fibers in terms of mechanical and physico-chemical properties.
+
       </h2>
 
       <h2 className="fs-4 fw-normal pt-4">
-        These qualities enable basalt fiber to be used as reinforced
-        composits, since they have superior corrosion and fire resistant
-        qualities.the manufacture of basalt fiber requires melting of basalt
-        rock to about 1400°C. This melt is then extruded through small
-        nozzles to produce continuous filaments of basalt fiber.
+        These qualities enable basalt fiber to be used in reinforced composites, as it provides excellent corrosion and fire resistance. The manufacture of basalt fiber requires melting basalt rock at about 1400°C. This molten material is then extruded through small nozzles to produce continuous basalt fiber filaments.
+
       </h2>
     </div>
   </div>

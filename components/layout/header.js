@@ -58,8 +58,8 @@ export default function Header() {
 
             <li className="nav-item">
               <Link
-                className={`nav-link white now ${isActive('/AluminiaCeramic') ? 'active' : ''}`}
-                href="/AluminiaCeramic"
+                className={`nav-link white now ${isActive('/AluminaCeramic') ? 'active' : ''}`}
+                href="/AluminaCeramic"
               >
                 Alumina Ceramic
               </Link>
