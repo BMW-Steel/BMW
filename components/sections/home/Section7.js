@@ -6,7 +6,7 @@ export default function Section7(){
 <div className="mt-5">
   <div className="text-center px-md-5 px-2">
     <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
-      Our Alumina Creamic Assembly Plant
+      Our Alumina Ceramic Assembly Plant
     </h2>
     <div className="px-md-5 text-start">
       <h4 style={{ color: 'rgb(66, 66, 66)', fontWeight: 400 }}>
