@@ -91,7 +91,7 @@ export default function Section5(){
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
-            href="/AluminiaCeramic"
+            href="/AluminaCeramic"
           >
             Know More
           </Link>

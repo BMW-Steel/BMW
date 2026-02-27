@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useRef } from "react";
 
 const VideoSection = () => {
@@ -56,14 +56,17 @@ const Section4 = () => {
             The Coal Flow Monitoring System is a real-time system that continuously measures and balances the mass flow, temperature, and velocity of coal in each pipe using advanced microwave technology.
 
             <br />
-            <a
+
+            <Link
             className="btn btn-danger btn-lg mt-4"
-            href="#"
-            style={{ backgroundColor: "red" }}
+            href="/ContactUs"
+             style={{ backgroundColor: "red" }}
           >
-            
             Know More
-          </a>
+          </Link>
+
+
+           
           </h4>
          
         </div>
