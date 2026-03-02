@@ -77,7 +77,7 @@ export default function Section5(){
         />
       </div>
       <div className="w-100 pe-2 pt-5 m-md-5 d-flex flex-column justify-content-around">
-        <h2 className="fs-1">Aluminia Ceramic Division</h2>
+        <h2 className="fs-1">Alumina Ceramic Division</h2>
         <h4
           style={{
             color: 'rgb(66, 66, 66)',
