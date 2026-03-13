@@ -118,6 +118,11 @@ export default function Footer() {
                     Contact
                   </Link>
                 </p>
+                <p>
+                  <Link href="/PravicyPolicy" className="text-reset text-decoration-none now">
+                    Pravicy Policy
+                  </Link>
+                </p>
               </div>
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
