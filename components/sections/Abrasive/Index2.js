@@ -1,267 +1,129 @@
+"use client";
 import React from "react";
 export default function Index2(){
     return (
         <>
         
-<div className="py-md-5">
-  <div className="text-center px-md-5 px-2">
-    <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
-      Our Fused Alumina Powder and Fused Alumina Abrasive manufacturing
-      plant
+<div className="abrasive-section text-center">
+
+  <div className="container-custom">
+    <h2 className="main-title">
+      Fused Alumina Powder & Abrasive Manufacturing Plant
     </h2>
 
-    <div className="px-md-5 py-md-3 text-center">
-      <h4 style={{ color: 'rgb(66, 66, 66)', fontWeight: 400 }}>
-        BMW has state of the art manufacturing facility of Fused Alumina
-        Powder and Fused Alumina Abrasive situated at Bhagwanpur, Haridwar
-        in Uttarakhand.
-      </h4>
+    <p className="desc-text mt-3">
+      BMW operates a state-of-the-art manufacturing facility in Bhagwanpur, Haridwar, Uttarakhand.
+    </p>
+
+    {/* VIDEO */}
+    <div className="mt-4">
+      <video
+        className="w-100 rounded-4 shadow"
+        src="/banner-video/abrasive.mp4"
+        autoPlay
+        loop
+        muted
+      />
     </div>
   </div>
 
-  {/* Carousal  */}
-  <div className="p-3 px-md-5">
-    <div className="px-md-5">
-      <div
-        id="carouselExampleAutoplaying"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            
-            <video className=" w-100"  style={{ borderRadius: '15px' }} src="/banner-video/abrasive.mp4" autoPlay loop muted />
-            {/* <div
-              className="p-3 section-6"
-              style={{
-                color: 'black',
-                backgroundColor: '#d9d9d9',
-                display: 'inline-block',
-                position: 'relative',
-                bottom: '50px',
-                left: '100px',
-                borderRadius: '10px',
-                boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-              }}
-            >
-              <h4 style={{ color: 'rgb(68, 67, 67)' }}>Process</h4>
-            </div> */}
-          </div>
-
-          
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
-  {/* Carousal END */}
 </div>
 {/* BANNER END */}
 
 {/* Section 1 */}
 <div className="mt-3">
-  <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
-    <div className="w-100 p-3">
-      <h2 className="mobile-fonts-heading" style={{ fontSize: '75px' }}>
-        Fused Alumina Manufacturing Process
-      </h2>
-      <h5
-        className="pt-4"
-        style={{
-          color: 'rgb(66, 66, 66)',
-          fontWeight: 400,
-          textAlign: 'justify',
-        }}
-      >
-        Calcined Alumina when melted at 2200°C in the electric arc furnace and cooled, yields White Fused Alumina. White Fused alumina is high grade abrasive/ refractory material.
-      </h5>
+  <div className="abrasive-section">
 
-      <div className="d-md-flex justify-content-around pt-md-5">
-        <div className="w-100 text-center p-3">
-          <img
-            src="images/abrasive/section-2 (1).jpeg"
-            className="w-100"
-            style={{ borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            alt=""
-          />
-          <h2 className="fs-4 fw-normal pt-3 p-3">Alumina melting at 2200 Degree C</h2>
-        </div>
+  <div className="container-custom">
 
-        <div className="w-100 text-center p-3">
-          <img
-            src="images/abrasive/section-2 (2).jpeg"
-            className="w-100"
-            style={{ borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            alt=""
-          />
-          <h2 className="fs-4 fw-normal pt-3 p-3">Alumina Melt after cooling and fracturing</h2>
-        </div>
+    <h2 className="section-title">
+      Fused Alumina Manufacturing Process
+    </h2>
+
+    <p className="desc-text mt-3">
+      Calcined Alumina melted at 2200°C produces White Fused Alumina — a high-grade abrasive material.
+    </p>
+
+    <div className="grid-2 mt-4">
+
+      <div className="card-img">
+        <img src="images/abrasive/section-2 (1).jpeg" />
+        <p className="small-text mt-2">Alumina melting at 2200°C</p>
       </div>
 
-      <h5
-        className="pt-4"
-        style={{
-          color: 'rgb(66, 66, 66)',
-          fontWeight: 400,
-          textAlign: 'justify',
-        }}
-      >
-        White Fused Alumina is the main raw material of fused sintered alumina which has a wide range of applications in different industries. It is composed of 99% alumina.
-      </h5>
+      <div className="card-img">
+        <img src="images/abrasive/section-2 (2).jpeg" />
+        <p className="small-text mt-2">Cooling and fracturing</p>
+      </div>
 
-      <div className="d-md-flex justify-content-around pt-md-5">
-        <div className="w-100 text-center p-3">
-          <img
-            src="images/abrasive/section.jpg"
-            className="w-100"
-            style={{ borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-            alt=""
-          />
-          <h2 className="fs-4 fw-normal pt-3 p-3">Fused Alumina Powder after Ball milling</h2>
-        </div>
+    </div>
 
-        <div className="w-100 text-center p-3">
+  </div>
+
+</div>
+
+  <div className="abrasive-section light">
+
+  <div className="container-custom">
+
+    <h2 className="section-title">Properties of Fused Alumina</h2>
+
+    <div className="table-card mt-4">
+      <table className="table modern-table">
+        <tbody>
+          <tr className="alt"><td>Colour</td><td>White</td></tr>
+          <tr><td>Purity</td><td>99%+</td></tr>
+          <tr className="alt"><td>Hardness</td><td>9 Mohs</td></tr>
+          <tr><td>Chemical resistance</td><td>High</td></tr>
+          <tr className="alt"><td>Density</td><td>3.90 gm/cc</td></tr>
+          <tr><td>Insulation</td><td>Strong</td></tr>
+          <tr className="alt"><td>Toughness</td><td>High</td></tr>
+          <tr><td>Crystal Formation</td><td> α trigonal system </td></tr>
           
-        </div>
-
-
-      </div>
+        </tbody>
+      </table>
     </div>
+
   </div>
 
-  <div className="px-md-5 p-3">
-    <h2 className="px-md-3 fs-1 my-3 py-4">Properties Of Fused Alumina Powder</h2>
-    <div className="d-md-flex">
-      <div className="px-md-3 table-responsive w-100">
-        <table className="table">
-          <tbody>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#f48221' }}>Colour</td>
-              <td style={{ backgroundColor: '#f48221' }}>White</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#e7e7e9' }}>Purity</td>
-              <td style={{ backgroundColor: '#e7e7e9' }}>99% +</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#f48221' }}>Hardness</td>
-              <td style={{ backgroundColor: '#f48221' }}>9 on Moh's scale</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#e7e7e9' }}>Chemical resistance</td>
-              <td style={{ backgroundColor: '#e7e7e9' }}>High</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div className="px-md-3 table-responsive w-100">
-        <table className="table">
-          <tbody>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#f48221' }}>Density</td>
-              <td style={{ backgroundColor: '#f48221' }}>3.90 gm/CC</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#e7e7e9' }}>Insulation</td>
-              <td style={{ backgroundColor: '#e7e7e9' }}>Strong</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#f48221' }}>Toughness</td>
-              <td style={{ backgroundColor: '#f48221' }}>High</td>
-            </tr>
-            <tr style={{ border: '2px solid white' }}>
-              <td style={{ backgroundColor: '#e7e7e9' }}>Crystal Formation</td>
-              <td style={{ backgroundColor: '#e7e7e9' }}>α trigonal system</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+</div>
 </div>
 {/* Section 1 END */}
 
 {/* Section 2 */}
-<div className="d-lg-flex px-md-5 justify-content-center align-items-center">
-  <div className="w-100 p-3">
-    <h2 className="mobile-fonts-heading" style={{ fontSize: '75px' }}>
-      Fused Alumina Abrasive
-    </h2>
-    <h5
-      className="pt-4"
-      style={{
-        color: 'rgb(66, 66, 66)',
-        fontWeight: 400,
-        textAlign: 'justify',
-      }}
-    >
-      White Fused Alumina Abrasive is high grade abrasive material which is available in different mesh grit. It is used as pressure blasting, grinding, lapping media. It is also used in bonded and coated abrasives, thermal spraying. It is available in different grain sizes depending on the requirement.
-    </h5>
+<div className="abrasive-section">
 
-    <div className="d-md-flex justify-content-around pt-md-5">
-      <div className="w-100 text-center p-3">
-        <img
-          src="images/abrasive/section-3.jpeg"
-          className="w-100"
-          style={{ borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
-          alt=""
-        />
-        <h2 className="fs-4 fw-normal pt-3 p-3">Calcined Fused Alumina Abrasive</h2>
-      </div>
+  <div className="container-custom">
 
-      <div className="w-100 text-center p-3">
-        
+    <h2 className="section-title">Fused Alumina Abrasive</h2>
+
+    <p className="desc-text mt-3">
+      High-grade abrasive used in blasting, grinding, polishing and coatings.
+    </p>
+
+    <div className="grid-2 mt-4">
+      <div className="card-img">
+        <img src="images/abrasive/section-3.jpeg" />
+        <p className="small-text mt-2">Calcined Fused Alumina</p>
       </div>
     </div>
-  </div>
-</div>
 
-<div className="px-md-5 px-3 pb-5">
-  <h2 className="px-md-3 fs-1 my-3 py-4">
+  
+
+<div className=" pb-5 pt-4">
+  <h2 className="section-title">
     Properties of Calcined Fused Alumina Abrasive
   </h2>
   <div className="d-md-flex">
-    <div className="px-md-3 table-responsive w-100">
-      <table className="table w-75">
+    <div className="table-card mt-4">
+      <table className="table modern-table">
         <tbody>
-          <tr style={{ border: '2px solid white', textAlign: 'center' }}>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>Mesh Grit</td>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>White</td>
-          </tr>
-          <tr style={{ border: '2px solid white', textAlign: 'center' }}>
-            <td style={{ backgroundColor: '#e7e7e9', textAlign: 'center' }}>Micro powder grade</td>
-            <td style={{ backgroundColor: '#e7e7e9' }}>It is very suitable for wet sandblasting and polishing operations.</td>
-          </tr>
-          <tr style={{ border: '2px solid white', textAlign: 'center' }}>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>Hardness</td>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>9 on Moh's scale</td>
-          </tr>
-          <tr style={{ border: '2px solid white', textAlign: 'center' }}>
-            <td style={{ backgroundColor: '#e7e7e9', textAlign: 'center' }}>Metal Removal</td>
-            <td style={{ backgroundColor: '#e7e7e9', textAlign: 'center' }}>Minimal</td>
-          </tr>
-          <tr style={{ border: '2px solid white', textAlign: 'center' }}>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>Typical Applications</td>
-            <td style={{ backgroundColor: '#f48221', textAlign: 'center' }}>Polishing, lapping, refractories, ceramics, fire retardants/smoke suppressant</td>
-          </tr>
+          <tr className="alt"><td>Mesh Grit</td><td>White</td></tr>
+          <tr><td>Micro powder grade</td><td>It is very suitable for wet sandblasting and polishing operations.</td></tr>
+          <tr className="alt"><td>Hardness</td><td>9 on Moh's scale </td></tr>
+          <tr><td>Metal Removal</td><td>Minimal</td></tr>
+          <tr className="alt"><td>Typical Applications</td><td>Polishing, lapping, refractories, ceramics, fire retardants/smoke suppressant</td></tr>
+          
         </tbody>
       </table>
     </div>
@@ -270,9 +132,9 @@ export default function Index2(){
 {/* Section 2 END */}
 
 {/* Section 4 */}
-<div className="d-lg-flex px-md-5 justify-content-center align-items-center">
+<div className="d-lg-flex  justify-content-center align-items-center">
   <div className="w-100 p-3">
-    <h2 className="mobile-fonts-heading" style={{ fontSize: '75px' }}>
+    <h2 className="section-title">
       Brown Fused Alumina Powder
     </h2>
     <h5
@@ -291,14 +153,14 @@ export default function Index2(){
     </h5>
 
     <div className="d-md-flex justify-content-around pt-md-5">
-      <div className="w-100 text-center p-3">
+      <div className="card-img text-center">
         <img
           src="images/abrasive/section-4.jpeg"
           className="w-100"
           style={{ borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
           alt=""
         />
-        <h2 className="fs-4 fw-normal pt-3 p-3">Calcined Fused Alumina Abrasive</h2>
+        <p className="small-text mt-2">Calcined Fused Alumina Abrasive</p>
       </div>
       <div className="w-100 text-center p-3">
         
@@ -308,55 +170,33 @@ export default function Index2(){
   </div>
 </div>
 
-<div className="px-md-5 p-3">
-  <h2 className="px-md-3 fs-1 my-3 py-4">Properties of Brown Fused Alumina</h2>
+<div className=" p-3">
+  <h2 className="section-title">Properties of Brown Fused Alumina</h2>
   <div className="d-md-flex">
-    <div className="px-md-3 table-responsive w-100">
-      <table className="table">
+    <div className="table-card mt-4">
+      <table className="table modern-table">
         <tbody>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#f48221' }}>Mohs hardness</td>
-            <td style={{ backgroundColor: '#f48221' }}>9 Moh</td>
-          </tr>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#e7e7e9' }}>Volume density</td>
-            <td style={{ backgroundColor: '#e7e7e9' }}>3.6-3.9g/cm</td>
-          </tr>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#f48221' }}>Bulk density</td>
-            <td style={{ backgroundColor: '#f48221' }}>1.75-1.95g/cm</td>
-          </tr>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#e7e7e9' }}>Melting point</td>
-            <td style={{ backgroundColor: '#e7e7e9' }}>2250°C</td>
-          </tr>
+          <tr className="alt"><td>Mohs Hardness</td><td>9 Moh</td></tr>
+          <tr><td>Volume Density</td><td>3.6-3.9g/cm³</td></tr>
+          <tr className="alt"><td>Bulk Density</td><td>1.75-1.95g/cm³</td></tr>
+          <tr><td>Melting Point</td><td>2250°C</td></tr>
+          <tr className="alt"><td>Specific Gravity</td><td>3.6-3.9g/cm³</td></tr>
+          <tr><td>Maximum Service Temperature</td><td>1900°C</td></tr>
+
         </tbody>
       </table>
     </div>
 
-    <div className="px-md-3 table-responsive w-100">
-      <table className="table">
-        <tbody>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#f48221' }}>Specific gravity</td>
-            <td style={{ backgroundColor: '#f48221' }}>3.6-3.9g/cm</td>
-          </tr>
-          <tr style={{ border: '2px solid white' }}>
-            <td style={{ backgroundColor: '#e7e7e9' }}>Maximum service temperature</td>
-            <td style={{ backgroundColor: '#e7e7e9' }}>1900°C</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    
   </div>
 </div>
 {/* Section 4 END */}
 
 {/* Section 5 */}
 <div className="mt-3">
-  <div className="d-lg-flex px-md-5 justify-content-center align-items-center">
+  <div className="d-lg-flex  justify-content-center align-items-center\\">
     <div className="w-100 p-3">
-      <h2 className="mobile-fonts-heading" style={{ fontSize: '75px' }}>
+      <h2 className="section-title">
         Fused Mullite Flakes
       </h2>
       <h5
@@ -371,8 +211,8 @@ export default function Index2(){
         temperature refractory material, crucibles and electric arc furnace.
       </h5>
 
-      <div className="d-md-flex justify-content-around pt-md-5">
-        <div className="w-100 text-center p-3">
+      <div className="grid-2 mt-4">
+        <div className="card-img text-center">
           <img
             src="images/abrasive/section-5.jpeg"
             className="w-100"
@@ -382,7 +222,7 @@ export default function Index2(){
           <h2 className="fs-4 fw-normal pt-3 p-3">Mullite Flakes</h2>
         </div>
 
-        <div className="w-100 text-center p-3">
+        <div className="card-img text-center">
           <img
             src="images/abrasive/section-2 (2).jpeg"
             className="w-100"
@@ -395,11 +235,96 @@ export default function Index2(){
     </div>
   </div>
 </div>
+</div>
+
+</div>
 {/* Section 5 END */}
 
 {/* Section-7 */}
 
 {/* Section-7 End  */}
+
+
+<style jsx>{`
+
+.container-custom {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.abrasive-section {
+  padding: 70px 0;
+}
+
+.abrasive-section.light {
+  background: #f9f9f9;
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* IMAGE CARD */
+.card-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* TABLE */
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.modern-table td {
+  background: #f4f4f4;
+  padding: 12px;
+}
+  .table-row td {
+  background: #f48221;
+  padding: 10px;
+}
+
+/* ALT ROW */
+.alt td {
+  background: #f48221;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 26px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+    .abrasive-section {
+  padding: 30px 0;
+}
+}
+  /* HEADING SYSTEM */
+.main-title { font-size: 36px; font-weight: 600; }
+.section-title { font-size: 28px; font-weight: 600; }
+.sub-title { font-size: 20px; font-weight: 500; }
+
+/* TEXT */
+.desc-text { font-size: 16px; line-height: 1.8; color: #444; }
+.small-text { font-size: 14px; color: #666; }
+
+`}</style>
 
         </>
     )}

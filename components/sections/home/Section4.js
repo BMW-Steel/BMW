@@ -16,67 +16,144 @@ const VideoSection = () => {
   };
 
   return (
-    <video
-      ref={videoRef}
-      poster="/images/section-4.jpg"
-      onClick={playVid}
-      id="myVideo"
-      src="images/banner-video/BMW0.3.mp4"
-      type="video/mp4"
-      loop
-      crossOrigin="anonymous"
-      className="hover-to-play w-100 video-2"
-      style={{
-        borderRadius: "10px",
-        cursor: "pointer",
-        height: "800px",
-      }}
-    ></video>
+  <video
+  ref={videoRef}
+  poster="images/section-4.jpg"
+  id="myVideo"
+  src="images/banner-video/BMW0.3.mp4"
+  loop
+  controls
+  controlsList="nodownload"   // ✅ REMOVE DOWNLOAD
+  disablePictureInPicture     // 🔥 optional (removes PiP)
+  crossOrigin="anonymous"
+  className="video-2"
+ 
+/>
   );
 };
 
 const Section4 = () => {
   return (
-    <div className="p-md-5 py-md-0 p-4" style={{ backgroundColor: "#F4F4F4" }}>
-      <div className="d-lg-flex p-md-5">
-        <div className="w-100">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: "50px" }}>
-          Our Sensor Based  <br/>Software Development Company
-          </h2>
-        </div>
-        <div className="w-100 d-flex justify-content-center align-items-center">
-          <h4
-            className="pt-4"
-            style={{
-              color: "rgb(66, 66, 66)",
-              fontWeight: 400,
-              textAlign: "justify",
-            }}
-          >
-            The Coal Flow Monitoring System is a real-time system that continuously measures and balances the mass flow, temperature, and velocity of coal in each pipe using advanced microwave technology.
+    <>
+    <div className="section-wrapper light">
 
-            <br />
+  <div className="container-custom">
 
-            <Link
-            className="btn btn-danger btn-lg mt-4"
-            href="/ContactUs"
-             style={{ backgroundColor: "red" }}
-          >
-            Know More
-          </Link>
+    {/* TOP CONTENT */}
+    <div className="grid-2 align-center">
 
-
-           
-          </h4>
-         
-        </div>
+      {/* LEFT */}
+      <div>
+        <h2 className="main-title">
+          Our Sensor Based <br /> Software Development Company
+        </h2>
       </div>
 
-      <div className="p-md-5 pt-md-0 pt-3">
-        <VideoSection /> {/* ✅ Use the VideoSection component inside Section4 */}
+      {/* RIGHT */}
+      <div>
+        <p className="desc-text">
+          The Coal Flow Monitoring System is a real-time system that continuously measures and balances the mass flow, temperature, and velocity of coal in each pipe using advanced microwave technology.
+        </p>
+
+        <Link
+          className="btn btn-danger mt-3"
+          href="/ContactUs"
+        >
+          Know More
+        </Link>
       </div>
+
     </div>
+
+    {/* VIDEO */}
+    <div className="video-container mt-5">
+      <VideoSection />
+    </div>
+
+  </div>
+
+</div>
+<style jsx>{`
+/* SECTION */
+.section-wrapper {
+  padding: 70px 0;
+}
+
+.section-wrapper.light {
+  background: #f4f4f4;
+}
+
+/* CONTAINER */
+.container-custom {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* HEADING */
+.main-title {
+  font-size: 32px;   /* ✅ standard */
+  font-weight: 600;
+}
+
+/* TEXT */
+.desc-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* VIDEO */
+.video-container {
+  width: 100%;
+}
+
+.video-2 {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16 / 9;
+  height: auto;
+
+  border-radius: 6px;
+  
+  /* 🔥 reduces visual dominance */
+  background: black;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .video-2 {
+    height: 250px;
+  }
+}
+
+`}</style>
+
+    </>
+
   );
 };
 
-export default Section4; // ✅ Only one export default
+export default Section4; 

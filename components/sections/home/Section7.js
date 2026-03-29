@@ -1,151 +1,349 @@
+"use client"; 
 import React from "react";
+import { useEffect } from "react";
 export default function Section7(){
+  
     return (
         <>
 
-<div className="mt-5">
-  <div className="text-center px-md-5 px-2">
-    <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
-      Our Alumina Ceramic Assembly Plant
+<div className="section-wrapper">
+
+  {/* 🔥 HEADER */}
+  <div className="text-center section-header">
+    <p className="section-sub">OUR FACILITY</p>
+    <h2 className="section-title">
+      Alumina Ceramic Assembly Plant
     </h2>
-    <div className="px-md-5 text-start">
-      <h4 style={{ color: 'rgb(66, 66, 66)', fontWeight: 400 }}>
-       BMW Steels Ltd. operates state-of-the-art manufacturing plants equipped with cutting-edge technologies in Roorkee and Bhagwanpur. The assembly and production of high-quality wear-resistant and coal flow management solutions ensure precision and efficiency at every step.</h4>
+    <p className="section-desc">
+      BMW Steels Ltd. operates state-of-the-art manufacturing plants equipped with cutting-edge technologies in Roorkee and Bhagwanpur. The assembly and production of high-quality wear-resistant and coal flow management solutions ensure precision and efficiency at every step.
+    </p>
+  </div>
+
+  {/* 🔥 CAROUSEL */}
+  <div className="carousel-container">
+    <div id="plantCarousel" className="carousel slide" data-bs-ride="carousel">
+
+      <div className="carousel-inner">
+
+        {["banner-2 (1).png","banner-2 (2).png","banner-2 (3).png"].map((img, i) => (
+          <div className={`carousel-item ${i === 0 ? "active" : ""}`} key={i}>
+            <img src={`images/${img}`} className="plant-img" />
+          </div>
+        ))}
+
+      </div>
+
+      {/* 🔥 CUSTOM ARROWS */}
+      <button className="carousel-control-prev custom-nav" data-bs-target="#plantCarousel" data-bs-slide="prev">
+        <span className="arrow-btn">‹</span>
+      </button>
+
+      <button className="carousel-control-next custom-nav" data-bs-target="#plantCarousel" data-bs-slide="next">
+        <span className="arrow-btn">›</span>
+      </button>
+
     </div>
   </div>
 
-  {/* Carousel */}
-  <div className="container">
-    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner pt-2">
-        <div className="carousel-item active">
-          <img
-            src="images/banner-2 (1).png"
-            style={{ borderRadius: '15px' }}
-            className="d-block w-100"
-            alt="..."
-          />
-          <div
-            className="p-3 section-6 d-none"
-            style={{
-              color: 'black',
-              backgroundColor: '#D9D9D9',
-              display: 'inline-block',
-              position: 'relative',
-              bottom: '50px',
-              left: '100px',
-              borderRadius: '10px',
-              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-            }}
-          >
-            <h3>Hathras, Uttar Pradesh</h3>
-            <h4 style={{ color: 'rgb(68, 67, 67)' }}>Fabrication and Assembly Unit</h4>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            src="images/banner-2 (2).png"
-            style={{ borderRadius: '15px' }}
-            className="d-block w-100"
-            alt="..."
-          />
-          <div
-            className="p-3 section-6 d-none"
-            style={{
-              color: 'black',
-              backgroundColor: '#D9D9D9',
-              display: 'inline-block',
-              position: 'relative',
-              bottom: '50px',
-              left: '100px',
-              borderRadius: '10px',
-              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-            }}
-          >
-            <h3>Hathras, Uttar Pradesh</h3>
-            <h4 style={{ color: 'rgb(68, 67, 67)' }}>Fabrication and Assembly Unit</h4>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img
-            src="images/banner-2 (3).png"
-            style={{ borderRadius: '15px' }}
-            className="d-block w-100"
-            alt="..."
-          />
-          <div
-            className="p-3 section-6 d-none"
-            style={{
-              color: 'black',
-              backgroundColor: '#D9D9D9',
-              display: 'inline-block',
-              position: 'relative',
-              bottom: '50px',
-              left: '100px',
-              borderRadius: '10px',
-              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-            }}
-          >
-            <h3>Hathras, Uttar Pradesh</h3>
-            <h4 style={{ color: 'rgb(68, 67, 67)' }}>Fabrication and Assembly Unit</h4>
-          </div>
-        </div>
-      </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true" />
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true" />
-        <span className="visually-hidden">Next</span>
-      </button>
+  <div className="assurance-section">
+
+  {/* 🔥 HEADING CENTER */}
+  
+
+  {/* 🔥 CONTENT + IMAGE */}
+  <div className="assurance-section">
+
+  {/* HEADING */}
+  
+
+  {/* CONTENT */}
+  <div className="assurance-container">
+
+    {/* 🔥 IMAGE LEFT */}
+    <div className="assurance-image">
+      <img src="images/last.webp" alt="" />
     </div>
+
+    {/* 🔥 TEXT RIGHT */}
+    <div className="assurance-content">
+      <div className="text-center mb-5">
+    <h2 className="section-title">Our Assurance</h2>
   </div>
-  {/* Carousel END */}
+      <ul className="assurance-list">
+        <li>We guarantee exceeding customer expectations through professional service.</li>
+        <li>We guarantee world class quality through ‘Make in India’ products.</li>
+        <li>We guarantee productivity improvement, energy saving & cost efficiency.</li>
+        <li>We guarantee consistency in quality and service.</li>
+        <li>We guarantee to be ON TIME.</li>
+      </ul>
+    </div>
+
+  </div>
+
 </div>
 
-{/* Section 7 */}
-<div className="px-md-5 px-2 my-5">
-  <div className="d-lg-flex justify-content-center align-items-center px-md-5">
-    <div className="w-100 d-flex justify-content-center align-items-center flex-column ps-md-5 justify-content-md-start align-items-md-start">
-      
-      <img
-        src="images/last.webp"
-        className="w-75 my-4"
-        style={{
-          borderRadius: '10px',
-          boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-        }}
-        alt=""
-      />
-    </div>
-    <div className="w-100 pe-md-5">
-      <div className="accordion p-2" id="accordionExample">
-      <h2 className="pt-4 mobile-fonts-heading text-center pb-3x" style={{ fontSize: '50px' }}>
-        Our Assurance
-      </h2>
-       <h5 className="faq-2 p-2 ps-4">1. We guarantee exceeding customer expectations through professional service.</h5>
-<br/>
-       <h5 className="faq-2 p-2 ps-4">2. We guarantee world class quality throug ‘Make in India’ products</h5>
-       <br/>
-       <h5 className="faq-2 p-2 ps-4">3. We guarantee productivity improvement, energy saving, cost efficiency</h5>
-       <br/>
-       <h5 className="faq-2 p-2 ps-4">4. We guarantee consistency in quality of products, and service.</h5>
-       <br/>
-       <h5 className="faq-2 p-2 ps-4">5. We guarantee to be ON TIME.</h5>
-      </div>
-    </div>
-  </div>
 </div>
+
+</div>
+<style jsx>{`
+
+/* 🔥 WRAPPER */
+.section-wrapper {
+  padding: 60px 20px;
+}
+
+/* 🔥 HEADER */
+.section-header {
+  max-width: 800px;
+  margin: auto;
+}
+
+.section-sub {
+  color: red;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-title.small {
+  font-size: 32px;
+}
+
+.section-desc {
+  color: #555;
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* 🔥 CAROUSEL */
+.carousel-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+  /* FIX UNEVEN SLIDE SHIFT */
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  
+  text-align: center;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: block;
+}
+ 
+
+.plant-img {
+width: 100%;
+  max-width: 900px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+   display: inline-block; 
+}
+
+/* 🔥 ARROWS */
+.custom-nav {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev.custom-nav {
+  left: calc(50% - 480px);
+}
+
+.carousel-control-next.custom-nav {
+  right: calc(50% - 480px);
+}
+
+.arrow-btn {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.assurance-section {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+/* 🔥 GRID */
+.assurance-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 🔥 IMAGE FIX (IMPORTANT) */
+.assurance-image {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* 🔥 TEXT */
+.assurance-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assurance-list li {
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: #444;
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* CHECK ICON */
+.assurance-list li::before {
+  content: "✔";
+  color: red;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+/* HEADING */
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 768px) {
+  .assurance-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .assurance-image img {
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}.assurance-section {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+/* 🔥 GRID */
+.assurance-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 🔥 IMAGE FIX (IMPORTANT) */
+.assurance-image {
+  display: flex;
+  justify-content: center;
+}
+
+.assurance-image img {
+  width: 100%;
+  max-width: 420px;   /* ✅ prevents zoom */
+  height: auto;       /* ✅ keeps aspect ratio */
+  object-fit: contain; /* ✅ FIXES CROPPING */
+  border-radius: 16px;
+  
+  padding: 20px;
+  
+}
+
+/* 🔥 TEXT */
+.assurance-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assurance-list li {
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: #444;
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* CHECK ICON */
+.assurance-list li::before {
+  content: "✔";
+  color: red;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+}
+
+/* HEADING */
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 768px) {
+  .assurance-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .assurance-image img {
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+
+  .custom-nav {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev.custom-nav {
+  left: calc(50% - 180px);
+}
+
+.carousel-control-next.custom-nav {
+  right: calc(50% - 180px);
+}
+}
+  .policy-block {
+  scroll-margin-top: 100px; /* adjust according to navbar height */
+}
+`}</style>
         </>
     )}

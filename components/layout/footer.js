@@ -6,7 +6,7 @@ export default function Footer() {
       
 
       <footer className=" text-lg-start bg-body-tertiary text-muted">
-        <section className="d-flex justify-content-md-center justify-content-lg-between p-4 border-bottom" style={{ backgroundColor: "rgb(0, 0, 0)", color: "#D9D9D9" }}>
+        <section className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 p-4 border-bottom" style={{ backgroundColor: "rgb(0, 0, 0)", color: "#D9D9D9" }}>
           <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
           </div>
@@ -30,8 +30,12 @@ export default function Footer() {
         <section className="" style={{ backgroundColor: "rgb(0, 0, 0)", color: "#D9D9D9" }}>
           <div className=" text-md-start pt-5">
             <div className="row mx-0 mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <a className="navbar-brand" href="#">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-start">
+                <a
+  className="navbar-brand d-block text-start"
+  href="/"
+  style={{ marginLeft: "-30px" }}
+>
                   <img src="images/llogo.png" height="100px" alt="" />
                 </a>
                 <p>
@@ -120,7 +124,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link href="/PravicyPolicy" className="text-reset text-decoration-none now">
-                    Pravicy Policy
+                    Privacy Policy
                   </Link>
                 </p>
               </div>

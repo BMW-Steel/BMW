@@ -1,96 +1,84 @@
+"use client";
 import React from "react";
 export default function Index4(){
     return (
         <>
     <div>
       {/* BANNER */}
-      <div className="">
-        <div className="text-center px-md-5 px-2">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
-            Research & Development Department
-          </h2>
-        </div>
+      <div className="rd-section">
 
-        {/* Carousal */}
-        <div className="p-3 px-md-5">
-          <div className="px-md-5">
-            <div
-              id="carouselExampleAutoplaying"
-              className="carousel slide"
-              dataBsRide="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src="images/devlopment/banner.png"
-                    style={{ borderRadius: '15px' }}
-                    className="d-block w-100"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                dataBsTarget="#carouselExampleAutoplaying"
-                dataBsSlide="prev"
-              >
-                <span className="carousel-control-prev-icon" ariaHidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                dataBsTarget="#carouselExampleAutoplaying"
-                dataBsSlide="next"
-              >
-                <span className="carousel-control-next-icon" ariaHidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
+  <div className="rd-container">
+
+    <div className="rd-header text-center">
+      <p className="rd-sub">INNOVATION & ENGINEERING</p>
+      <h2 className="rd-title">
+        Research & Development Department
+      </h2>
+      
+    </div>
+
+    {/* CAROUSEL */}
+    <div className="rd-carousel">
+      <div id="carouselExampleAutoplaying" className="carousel slide">
+        <div className="carousel-inner rounded-4 shadow">
+          <div className="carousel-item active mt-5">
+            <img src="images/devlopment/banner.png" className="d-block w-100" alt="" />
           </div>
         </div>
-        {/* Carousal END */}
       </div>
+    </div>
+
+  </div>
+
+</div>
       {/* BANNER END */}
 
       {/* Section 2 */}
-      <div className="p-3 px-md-5">
-        <div className="px-md-5">
-          <h2 className="fs-4 fw-normal pt-3">
-            Research & Development Department backed by strong R&D for deliverance of high quality product, yet it is always new. Achieving this level of maturity requires
-            years of questioning the purpose of our existence and truly understanding who we are creating for.
-          </h2>
-          <h2 className="fs-4 fw-normal pt-3">
-            BMW's research and development laboratory is one of the finest in India in terms of the sheer efficiency and updated modern
-            testing facilities. Changing the face of the alumina ceramic and cast basalt manufacturing, one innovation at a time. Every product
-            of BMW is a result of a flawless R&D set-up.
-          </h2>
-          <h2 className="fs-4 fw-normal pt-3">
-            Discovering opportunities that can raise quality standards by means of breakthrough technology and innovations.
-          </h2>
-        </div>
-      </div>
+      <div className="rd-section light">
+
+  <div className="rd-container">
+
+    <div className="rd-text">
+      <p>
+        Research & Development Department backed by strong R&D for deliverance of high quality product, yet it is always new. Achieving this level of maturity requires years of questioning the purpose of our existence and truly understanding who we are creating for.
+      </p>
+
+      <p>
+        BMW's research and development laboratory is one of the finest in India in terms of the sheer efficiency and updated modern testing facilities. Changing the face of the alumina ceramic and cast basalt manufacturing, one innovation at a time. Every product of BMW is a result of a flawless R&D set-up.
+      </p>
+
+      <p>
+        Discovering opportunities that can raise quality standards by means of breakthrough technology and innovations.
+      </p>
+    </div>
+
+  </div>
+
+</div>
       {/* Section 2 END */}
 
       {/* Testing Facilities Table */}
-      <div className="p-md-5">
-        <div className="px-md-5 p-3">
-          <div className="px-md-3 table-responsive">
-            <h2 className="pb-3 mobile-fonts-heading" style={{ fontSize: '75px' }}>
-              Testing Facilities at our R&D Lab
-            </h2>
-            <table className="table">
-              <thead className="thead-dark">
-                <tr>
-                  <td style={{ backgroundColor: '#ff2d2d', color: '#f4f4f4' }}>SR.NO.</td>
-                  <td style={{ backgroundColor: '#ff2d2d', color: '#f4f4f4' }}>CHARACTERISTIC</td>
-                  <td style={{ backgroundColor: '#ff2d2d', color: '#f4f4f4' }}>TEST METHOD</td>
-                  <td style={{ backgroundColor: '#ff2d2d', color: '#f4f4f4' }}>INSTRUMENT MAKE</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ border: '2px solid white' }}>
+      <div className="rd-section">
+
+  <div className="rd-container">
+
+    <h2 className="rd-title small text-center">
+      Testing Facilities at our R&D Lab
+    </h2>
+
+    <div className="table-card">
+      <div className="table-responsive">
+        <table className="table modern-table text-center">
+          <thead>
+            <tr>
+              <th>SR.NO.</th>
+              <th>Characteristic</th>
+              <th>Test Method</th>
+              <th>Instrument</th>
+            </tr>
+          </thead>
+          <tbody>
+                            <tr style={{ border: '2px solid white' }}>
                   <td style={{ backgroundColor: '#bdbcc3' }}>1.</td>
                   <td style={{ backgroundColor: '#bdbcc3' }}>Green modulus of rapture</td>
                   <td style={{ backgroundColor: '#bdbcc3' }}>ISO-10545-4</td>
@@ -216,243 +204,266 @@ export default function Index4(){
                   <td style={{ backgroundColor: '#bdbcc3' }}>XRF</td>
                   <td style={{ backgroundColor: '#bdbcc3' }}>Netherland</td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+          </tbody>
+        </table>
       </div>
+    </div>
+
+  </div>
+
+</div>
 
       {/* BMW R&D Laboratory Section */}
       <div className="" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="text-center px-md-5 px-2">
-          <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '75px' }}>
+          <h2 className="rd-title">
             BMW R&D Laboratory
           </h2>
         </div>
 
         {/* Carousal */}
-        <div className="p-3 px-md-5">
-          <div className="px-md-5">
-            <div
-              id="carouselExampleAutoplaying"
-              className="carousel slide"
-              dataBsRide="carousel"
-            >
-              <div className="carousel-inner" style={{ borderRadius: '15px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
-                <div className="carousel-item active" style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
-                  <img
-                    src="images/devlopment/banner.png"
-                    style={{ borderRadius: '15px' }}
-                    className="d-block w-100"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <h4 className="pt-4" style={{ color: 'rgb(68, 67, 67)' }}>
-              BMW R&D Laboratory at Bhagwanpur, Haridwar, Uttarakhand
-            </h4>
-          </div>
-        </div>
+        <div className="rd-section light text-center">
+
+  <div className="rd-container">
+
+    <h2 className="rd-title small">BMW R&D Laboratory</h2>
+
+    <div className="rd-carousel">
+      <img
+        src="images/devlopment/banner.png"
+        className="w-100 rounded-4 shadow"
+        alt=""
+      />
+    </div>
+
+    <p className="rd-caption">
+      BMW R&D Laboratory at Bhagwanpur, Haridwar, Uttarakhand
+    </p>
+
+  </div>
+
+</div>
         {/* Carousal END */}
       </div>
 
       {/* Section 3 */}
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
-        <div className="px-md-5">
-          <div className="d-flex flex-column-reverse flex-md-column">
-            <div className="d-md-flex pt-2">
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (2).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Compressive Strength Testing Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A compression testing machine (CTM) is a
-                  device that measures a material's compressive strength by applying a force until it breaks.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (9).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Flexural Strength Testing Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  Flexural testing machine is used to measure the force required to bend a beam of
-                  plastic material and determines the resistance to flexing or stiffness of a material.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (6).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Deep Abrasion Testing Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A deep abrasion testing machine is a device that evaluates how well a material resists deep abrasion. It's used to test the resistance of unglazed tiles and other materials to abrasion.
-                </h2>
-              </div>
-            </div>
-            <div className="d-md-flex pt-2">
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (7).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Particle Size Analyser</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A particle size analyzer is a tool that measures the size, shape, and distribution of
-                  particles in a sample. It can be used to analyze samples in liquid, powder, aerosol, or other forms.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (8).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">XRF Analyser Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  An X-ray fluorescence (XRF) analyzer is a nondestructive instrument that measures the elemental composition of a material by
-                  exposing it to X-rays and analyzing the resulting fluorescent X-rays.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (5).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Water Absorption Test Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A Water Absorption test machine is used
-                  to test how much water any material
-                  can absorb.
-                </h2>
-              </div>
-            </div>
-            <div className="d-md-flex pt-2">
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (3).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Muffle Furnace</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A muffle furnace is a laboratory instrument used to heat materials to extremely high temperatures whilst isolating them from fuel
-                  and the byproducts of combustion from the heat source. Muffle furnaces allow for the isolation of a material to reduce the risks of
-                  cross-contamination and identify
-                  specific properties.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (4).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Coefficient of Linear Expansion Testing Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  CLTE tester is a machine that measures how much a material expands when heated or cooled. The coefficient of linear expansion is a measure of how much a material's length changes in relation to its total length when the temperature changes by one Kelvin.
-                </h2>
-              </div>
-              <div className="w-100">
-                <img
-                  src="images/devlopment/section-1 (1).png"
-                  className="w-100 p-3"
-                  alt=""
-                />
-                <h2 className="fs-4 fw-bold fw-normal pt-3">Density Testing Machine</h2>
-                <h2 className="fs-5 fw-normal p-2 pt-3">
-                  A density testing machine, also known as a density meter or densimeter, is a device used to measure the density of solids, liquids, and powders.
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="rd-section">
+
+  <div className="rd-container">
+
+    <div className="rd-grid">
+
+      {/* REPEAT CARD */}
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (2).png" alt="" />
+        <h4>Compressive Strength Testing Machine</h4>
+        <p>Measures compressive strength by applying force until failure.</p>
       </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (9).png" alt="" />
+        <h4>Flexural Strength Testing Machine</h4>
+        <p>Flexural testing machine is used to measure the force required to bend a beam of
+          plastic material and determines the resistance to flexing or stiffness of a material.</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (6).png" alt="" />
+        <h4>Deep Abrasion Testing Machine</h4>
+        <p>A deep abrasion testing machine is a device that evaluates how well a material resists deep abrasion. It's used to test the resistance of unglazed tiles and other materials to abrasion.
+            </p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (7).png" alt="" />
+        <h4>Particle Size Analyser</h4>
+        <p>A particle size analyzer is a tool that measures the size, shape, and distribution of
+        particles in a sample. It can be used to analyze samples in liquid, powder, aerosol, or other forms.</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (8).png" alt="" />
+        <h4>XRF Analyser Machine</h4>
+        <p>An X-ray fluorescence (XRF) analyzer is a nondestructive instrument that measures the elemental composition of a material by
+                  exposing it to X-rays and analyzing the resulting fluorescent X-rays.</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (5).png" alt="" />
+        <h4>Water Absorption Test Machine</h4>
+        <p>A Water Absorption test machine is used
+                  to test how much water any material
+                  can absorb.</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (3).png" alt="" />
+        <h4>Muffle Furnace</h4>
+        <p>A muffle furnace is a laboratory instrument used to heat materials to extremely high temperatures whilst isolating them from fuel
+                  and the byproducts of combustion from the heat source. Muffle furnaces allow for the isolation of a material to reduce the risks of
+                  cross-contamination and identify</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (4).png" alt="" />
+        <h4>Coefficient of Linear Expansion Testing Machine</h4>
+        <p>CLTE tester is a machine that measures how much a material expands when heated or cooled. The coefficient of linear expansion is a measure of how much a material's length changes in relation to its total length when the temperature changes by one Kelvin.</p>
+      </div>
+      <div className="rd-card">
+        <img src="images/devlopment/section-1 (1).png" alt="" />
+        <h4>Density Testing Machine</h4>
+        <p>A density testing machine, also known as a density meter or densimeter, is a device used to measure the density of solids, liquids, and powders.</p>
+      </div>
+
+      {/* Repeat all your items same way */}
+
+    </div>
+
+  </div>
+
+</div>
       {/* Section 3 END */}
 
       {/* Section 4 */}
-      <div className="p-3 p-md-5">
-        <div className="px-md-5">
-          <div>
-            <h2 className="fs-1" style={{ color: 'red' }}>Our Research Partners</h2>
-            <div className="d-flex flex-column-reverse flex-md-column">
-              <div className="pt-2">
-                <div className="w-100">
-                  <h2 className="fs-4 fw-normal pt-3 p-3">
-                    We Partner with premier research institutes for developing new products.
-                  </h2>
-                  <img
-                    src="images/devlopment/section-2 (1).png"
-                    className="p-3"
-                    alt=""
-                  />
-                </div>
-                <div className="w-100">
-                  <h2 className="fs-4 fw-normal pt-3 p-3">
-                    We have partnered with IIT Madras for developing Porous Alumina bricks.
-                  </h2>
-                  <img
-                    src="images/devlopment/section-2 (3).png"
-                    className="p-3"
-                    alt=""
-                  />
-                </div>
-                <div className="w-100">
-                  <h2 className="fs-4 fw-normal pt-3 p-3">
-                    We have partnered with IIT Jodhpur for developing online particle size sensor.
-                  </h2>
-                  <img
-                    src="images/devlopment/section-2 (2).png"
-                    className="p-3"
-                    alt=""
-                  />
-                  <h2 className="fs-4 fw-normal pt-3 p-3">
-                    We have partnered with IIT Roorkee to validate the testing of our laboratory.
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="rd-section light">
 
-          <div className="pt-3">
-            <h2 className="fs-1" style={{ color: 'red' }}>Our Successful developments with the help of R&D</h2>
-            <div className="d-flex flex-column-reverse flex-md-column">
-              <div className="d-md-flex pt-2">
-                <div className="w-100">
-                  <img
-                    src="images/devlopment/section-3.png"
-                    className="w-100 p-3"
-                    alt=""
-                  />
-                </div>
-                <div className="w-100">
-                  <img
-                    src="images/devlopment/section-3-1.png"
-                    className="w-100 p-3"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div className="rd-container text-center">
+
+    <h2 className="rd-title small">Our Research Partners</h2>
+
+    <div className="rd-partners">
+      <img src="images/devlopment/section-2 (1).png" alt="" />
+      <img src="images/devlopment/section-2 (3).png" alt="" />
+      <img src="images/devlopment/section-2 (2).png" alt="" />
+    </div>
+
+  </div>
+
+</div>
       {/* Section 4 END */}
 
       {/* Section-7 */}
       
       {/* Section-7 End */}
     </div>
+    <style jsx>{`
+
+.rd-section {
+  padding: 80px 20px;
+}
+
+.rd-section.light {
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.rd-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+.rd-sub {
+  color: red;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.rd-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.rd-title.small {
+  font-size: 30px;
+}
+
+.rd-desc {
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* TEXT */
+.rd-text {
+  max-width: 1100px;
+}
+
+.rd-text p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* TABLE */
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.rd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.rd-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.rd-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rd-card h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.rd-card p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* PARTNERS */
+.rd-partners {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rd-partners img {
+  max-width: 200px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .rd-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rd-title {
+    font-size: 28px;
+  }
+    rd-title.small {
+    font-size: 22px;
+    ]
+    .rd-section {
+  padding: 40px 10px;
+}
+  rd-section.light {
+  padding: 20px 10px;
+    }
+
+
+    rd-partners {
+    flex-direction: row;
+    align-items: center;
+    gap:10px
+    }
+}
+
+`}</style>
   
 
 

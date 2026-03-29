@@ -2,179 +2,150 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import React from "react";
-import GoogleTranslate from "@/components/GoogleTranslate"; // Import the Google Translate component
+import GoogleTranslate from "@/components/GoogleTranslate";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export default function Header() {
   const pathname = usePathname();
 
-  const isActive = (path) => {
-    return pathname === path;
+  const isActive = (path) => pathname === path;
+
+  // Custom style for better spacing and hover transition
+  const navLinkStyle = {
+    transition: "all 0.3s ease",
+    fontWeight: "500"
   };
 
   return (
-    
-    
-    <nav className="navbar navbar-expand-lg bg-body-tertiary py-0" style={{ backgroundColor: "black" }}>
-      <GoogleTranslate/>
-      <div className="container-fluid d-flex justify-content-around align-items-center" style={{ backgroundColor: "black" }}>
-        <div>
+    <>
+    <nav className="navbar navbar-expand-lg py-3" style={{ backgroundColor: "black" }}>
+      <div className="container-fluid px-lg-5">
+      <GoogleTranslate />
+        
+        {/* Brand & Toggler Group */}
+        <div className="d-flex align-items-center">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="/images/menu.png" alt="Menu"/>
+            <img src="/images/menu.png" alt="Menu" width="30px"/>
           </button>
-          <a className="navbar-brand" href="#">
-            <img src="/images/llogo.png" height="70px" alt="Logo"/>
-          </a>
+          <Link className="navbar-brand" href="/">
+            <img src="/images/llogo.png" height="70px" alt="Logo" />
+          </Link>
         </div>
+
+        {/* Navigation Links */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+          
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+            <li className="nav-item px-4">
               <Link
-                className={`nav-link white  ${isActive('/') ? 'active' : ''}`}
+                className={`nav-link text-white ${isActive('/') ? 'active border-bottom' : ''}`}
                 href="/"
+                style={navLinkStyle}
               >
                 Home
               </Link>
             </li>
 
-            
-
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <Link
-                className={`nav-link white now ${isActive('/CastBasalt') ? 'active' : ''}`}
+                className={`nav-link text-white ${isActive('/CastBasalt') ? 'active border-bottom' : ''}`}
                 href="/CastBasalt"
+                style={navLinkStyle}
               >
                 Cast Basalt
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <Link
-                className={`nav-link white now ${isActive('/FusedAluminaAbrasive') ? 'active' : ''}`}
+                className={`nav-link text-white ${isActive('/FusedAluminaAbrasive') ? 'active border-bottom' : ''}`}
                 href="/FusedAluminaAbrasive"
+                style={navLinkStyle}
               >
-                Fused Alumina Abrasive
+                Fused Alumina
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <Link
-                className={`nav-link white now ${isActive('/AluminaCeramic') ? 'active' : ''}`}
+                className={`nav-link text-white ${isActive('/AluminaCeramic') ? 'active border-bottom' : ''}`}
                 href="/AluminaCeramic"
+                style={navLinkStyle}
               >
                 Alumina Ceramic
               </Link>
             </li>
 
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown px-2">
               <a
-                className="nav-link dropdown-toggle white now"
+                className="nav-link dropdown-toggle text-white"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={navLinkStyle}
               >
                 Other Products
               </a>
-              <ul className="dropdown-menu">
-
-                {/* <li className="nav-item">
-              <Link
-                className={`dropdown-item${isActive('/Fabrication') ? 'active' : ''}`}
-                href="/Fabrication"
-              >
-                Fabrication
-              </Link>
-            </li> */}
-
-             <li>
-                  <hr className="dropdown-divider" />
-                </li>
-
-
-
-                <li>
-                  <Link
-                    className={`dropdown-item ${isActive('/ResearchDevelopmentDepartment') ? 'active' : ''}`}
-                    href="/ResearchDevelopmentDepartment"
-                  >
-                    Research & Development Department
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link
-                    className={`dropdown-item ${isActive('/ChemicallyBondedCompoundSeries') ? 'active' : ''}`}
-                    href="/ChemicallyBondedCompoundSeries"
-                  >
-                    Chemically Bonded Compound Series
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link
-                    className={`dropdown-item ${isActive('/WearSealDiamondPutty') ? 'active' : ''}`}
-                    href="/WearSealDiamondPutty"
-                  >
-                    Wear Seal Diamond Putty
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link
-                    className={`dropdown-item ${isActive('/BasalticMineralFertilizer') ? 'active' : ''}`}
-                    href="/BasalticMineralFertilizer"
-                  >
-                    BMW Basaltic Mineral Fertilizer
-                  </Link>
-                </li>
+              <ul className="dropdown-menu shadow">
+                <li><Link className="dropdown-item" href="/ResearchDevelopmentDepartment">R & D Department</Link></li>
+                <li><hr className="dropdown-divider" /></li>
+                <li><Link className="dropdown-item" href="/ChemicallyBondedCompoundSeries">Chemically Bonded</Link></li>
+                <li><hr className="dropdown-divider" /></li>
+                <li><Link className="dropdown-item" href="/WearSealDiamondPutty">Wear Seal Putty</Link></li>
+                <li><hr className="dropdown-divider" /></li>
+                <li><Link className="dropdown-item" href="/BasalticMineralFertilizer">BMW Fertilizer</Link></li>
               </ul>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item px-2">
               <Link
-                className={`nav-link white now ${isActive('/ContactUs') ? 'active' : ''}`}
-                href="/ContactUs"
-              >
-                Contact Us
-              </Link>
-            </li>
-
-
-             <li className="nav-item">
-              <Link
-                className={`nav-link white now ${isActive('/Blogs') ? 'active' : ''}`}
+                className={`nav-link text-white ${isActive('/Blogs') ? 'active border-bottom' : ''}`}
                 href="/Blogs"
+                style={navLinkStyle}
               >
-               Blogs
+                Blogs
               </Link>
             </li>
-
-
-            
+            {/* 🔥 MOBILE ONLY CONTACT LINK */}
+<li className="nav-item px-2 d-lg-none">
+  <Link
+    className={`nav-link text-white ${isActive('/ContactUs') ? 'active border-bottom' : ''}`}
+    href="/ContactUs"
+    style={navLinkStyle}
+  >
+    Contact Us
+  </Link>
+</li>
           </ul>
         </div>
 
-        <div className="d-none d-md-block">
-         
+        {/* CTA Button */}
+        <div className="d-none d-lg-block ms-lg-4">
           <Link
-                className="btn white"
-                href="/ContactUs"
-                style={{ backgroundColor: "red" }}
-              >
-                Get a Quote <i className="fa-solid fa-arrow-right ms-2"></i>
-              </Link>
-
-          
+            className="btn px-4 py-2 fw-bold text-white shadow-sm"
+            href="/ContactUs"
+            style={{ backgroundColor: "#e60000", borderRadius: "5px" }}
+          >
+            Get a Quote <i className="fa-solid fa-arrow-right ms-2 fs-4"></i>
+          </Link>
         </div>
       </div>
-      
     </nav>
-    
+    <style jsx>{`
+.navbar .nav-link.active {
+  color: red !important;
+  border-bottom: 2px solid red;
+}
+  @media (min-width: 768px) {
+ .navbar-brand{
+    margin-left: 50px;}
+}
+
+
+
+
+`}</style>
+    </>
   );
 }

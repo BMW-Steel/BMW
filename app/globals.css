@@ -40,3 +40,36 @@ a {
     color-scheme: dark;
   }
 }
+
+.carousel-indicators button {
+  transform: scale(0.7);
+  transition: 0.3s ease;
+}
+
+/* 🔥 ACTIVE BOX SMALLER */
+.carousel-indicators .active {
+  transform: scale(0.6); /* smaller than others */
+}
+
+
+.section-text {
+  color: #424242;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-link.active {
+  color: red !important;
+  border-bottom: 2px solid red;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}

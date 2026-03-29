@@ -1,3 +1,4 @@
+"use client";          
 import Link from "next/link";
 import React from "react";
 export default function Section5(){
@@ -5,14 +6,14 @@ export default function Section5(){
         <>
         <div className="py-md-5 px-2">
   <div className="container py-2 py-md-5">
-    <h2 className="pt-4 mobile-fonts-heading text-center" style={{ fontSize: '70px', color: 'red' }}>
-      Powering Industries with Precision Manufacturing
+    <h2 className="main-title text-center text-red">
+      Powering Industries with Precision<br></br> Manufacturing
     </h2>
   </div>
   {/* CARD */}
-  <div className="mb-5 scro">
+  <div className="mb-5 scro card-wrapper">
     <div
-      className="mx-3 mx-md-5 d-flex flex-column p-3 flex-lg-row align-items-center justify-content-center"
+      className="mx-3 mx-md-5 division-card d-flex flex-column flex-lg-row align-items-center justify-content-center"
       style={{
         backgroundColor: '#F4F4F4',
         borderRadius: '10px',
@@ -30,18 +31,12 @@ export default function Section5(){
           }}
         />
       </div>
-      <div className="w-100 pe-2 pt-5 m-md-5 d-flex flex-column justify-content-around">
-        <h2 className="fs-1">Cast Basalt Division</h2>
-        <h4
-          style={{
-            color: 'rgb(66, 66, 66)',
-            fontWeight: 400,
-            textAlign: 'justify',
-          }}
-        >
+      <div className="w-100 pe-2  d-flex flex-column justify-content-around">
+        <h3 className="card-title">Cast Basalt Division</h3>
+        <p className="desc-text">
           BMW extracts and grades basalt with a unique structure for maximum erosion resistance. The basalt is melted at 1325°C and cast into molds, followed by controlled heat treatment to enhance recrystallization. This process yields dense, inert, and highly erosion-resistant products with zero porosity, thanks to advanced processing and quality control systems.
 
-          </h4>
+          </p>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -56,9 +51,9 @@ export default function Section5(){
   {/* CARD end */}
 
   {/* CARD */}
-  <div className="mb-5 scro">
+  <div className="mb-5 scro card-wrapper">
     <div
-      className="mx-3 mx-md-5 d-flex flex-column p-3 flex-lg-row align-items-center justify-content-center"
+      className="mx-3 mx-md-5 division-card d-flex flex-column flex-lg-row align-items-center justify-content-center"
       style={{
         backgroundColor: '#F4F4F4',
         borderRadius: '10px',
@@ -76,18 +71,12 @@ export default function Section5(){
           }}
         />
       </div>
-      <div className="w-100 pe-2 pt-5 m-md-5 d-flex flex-column justify-content-around">
-        <h2 className="fs-1">Alumina Ceramic Division</h2>
-        <h4
-          style={{
-            color: 'rgb(66, 66, 66)',
-            fontWeight: 400,
-            textAlign: 'justify',
-          }}
-        >
+      <div className="w-100 pe-2  d-flex flex-column justify-content-around">
+        <h3 className="card-title">Alumina Ceramic Division</h3>
+        <p className="desc-text">
           BMW sources high-grade sintered and finely ground alumina with a special microstructure for optimal erosion resistance. The alumina powder is mixed with additives and water in a ball mill, then dried in a spray dryer to form granules. These granules are pressed into shape and fired in a tunnel furnace at 1550°C. Each batch undergoes rigorous quality checks to ensure top quality.
 
-          </h4>
+          </p>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -102,9 +91,9 @@ export default function Section5(){
   {/* CARD end */}
 
   {/* CARD */}
-  <div className="mb-5 scro">
+  <div className="mb-5 scro card-wrapper">
     <div
-      className="mx-3 mx-md-5 d-flex flex-column p-3 flex-lg-row align-items-center justify-content-center"
+      className="mx-3 mx-md-5 division-card d-flex flex-column flex-lg-row align-items-center justify-content-center"
       style={{
         backgroundColor: '#F4F4F4',
         borderRadius: '10px',
@@ -122,17 +111,11 @@ export default function Section5(){
           }}
         />
       </div>
-      <div className="w-100 pe-2 pt-5 m-md-5 d-flex flex-column justify-content-around">
-        <h2 className="fs-1">Alumina Powder and Fused Alumina Abrasive</h2>
-        <h4
-          style={{
-            color: 'rgb(66, 66, 66)',
-            fontWeight: 400,
-            textAlign: 'justify',
-          }}
-        >
+      <div className="w-100 pe-2  d-flex flex-column justify-content-around">
+        <h3 className="card-title">Alumina Powder and Fused Alumina Abrasive</h3>
+        <p className="desc-text">
           BMW's Wear Seal® series, including Wear Seal® Diamond and Wear Seal® CBC, protects against extreme wear, abrasion, and corrosion. These customizable linings are applied to pipes, chutes, and hoppers, offering a cost-effective solution to extend machinery life in cement, mining, and power generation industries.
-        </h4>
+        </p>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -147,9 +130,9 @@ export default function Section5(){
   {/* CARD end */}
 
   {/* CARD */}
-  <div className="mb-5 scro">
+  <div className="mb-5 scro card-wrapper">
     <div
-      className="mx-3 mx-md-5 d-flex flex-column p-3 flex-lg-row align-items-center justify-content-center"
+      className="mx-3 mx-md-5 division-card d-flex flex-column flex-lg-row align-items-center justify-content-center"
       style={{
         backgroundColor: '#F4F4F4',
         borderRadius: '10px',
@@ -167,19 +150,13 @@ export default function Section5(){
           }}
         />
       </div>
-      <div className="w-100 pe-2 pt-5 m-md-5 d-flex flex-column justify-content-around">
+      <div className="w-100 pe-2  d-flex flex-column justify-content-around">
         <div>
-          <h2 className="fs-1">Chemically Bonded Compound Series (CBC)</h2>
+          <h3 className="card-title">Chemically Bonded Compound Series (CBC)</h3>
         </div>
-        <h4
-          style={{
-            color: 'rgb(66, 66, 66)',
-            fontWeight: 400,
-            textAlign: 'justify',
-          }}
-        >
+        <p className="desc-text">
          The CBC series offers flexibility of use across all grades. CBCTM can be employed to install new linings with complex profiles as well as on roofs, using only a few simple lining tools. The recommended CBCTM lining thickness depends on the job requirements and application conditions. Final lining thickness can be recommended after technical evaluation by BMW at the lining site. The curing time for the CBCTM series of compounds is 48 hours.
-</h4>
+</p>
         <div className="d-flex m-auto m-md-0">
           <Link
             className="btn btn-danger btn-lg mt-4 mx-md-3 me-1"
@@ -193,5 +170,97 @@ export default function Section5(){
   </div>
   {/* CARD end */}
 </div>
+<style jsx>{`
+/* HEADING */
+.main-title {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.text-red {
+  color: red;
+}
+
+/* 🔥 CARD UPGRADE */
+/* 🔥 WRAPPER */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔥 CARD */
+.division-card {
+  width: 100%;
+  max-width: 1000px;   /* controls size */
+  margin: 0 auto;      /* perfect centering */
+
+  background: #f4f4f4;
+  border-radius: 14px;
+  padding: 18px;
+
+  
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT (subtle) */
+.division-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.division-card img {
+  width: 100%;
+  height: 260px;              /* 🔥 key fix */
+  object-fit: cover;
+
+  border-radius: 10px;
+  
+}
+
+/* TITLE */
+.card-title {
+  font-size: 20px;   /* slightly reduced */
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.desc-text {
+  font-size: 15px;   /* tighter */
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.division-card .btn {
+  margin-top: 20px;
+  
+  
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+  .division-card {
+  transition: 0.3s ease;
+  margin: 0 auto;      /* perfect centering */
+
+  background: #f4f4f4;
+  border-radius: 14px;
+  padding: 18px;
+
+  }
+  .division-card:hover {
+  transform: translateY(-5px);
+}
+} 
+
+
+
+`}</style>
         </>
     )}

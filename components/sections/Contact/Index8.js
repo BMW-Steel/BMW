@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 export default function Index8(){
     return (
@@ -52,104 +53,94 @@ export default function Index8(){
       {/* BANNER END */}
 
       {/* Section-1 */}
-      <div className="p-lg-5">
-        <div className="p-lg-5 p-3 d-lg-flex">
-          <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
-            <img src="images/contact-us/span.w-32.png" alt="" />
-            <h2 className="pt-4 fs-3"  style={{ fontSize:'25px'}}>sales@bmwsteels .com</h2>
-            <h4 className="pt-3 fw-normal">We aim to respond within 24 hours.</h4>
-          </div>
+      <div className="contact-cards">
 
-          <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
-            <img src="images/contact-us/span.w-32 (1).png" alt="" />
-            <h2 className="pt-4" style={{ fontSize:'25px'}}>BMW Steels Ltd</h2>
-            <h4 className="pt-3 fw-normal">55, Pritam Road, Dalanwala, Dehradun-248001</h4>
-          </div>
+  <div className="contact-card">
+    <img src="images/contact-us/span.w-32.png" alt="" />
+    <h3>sales@bmwsteels.com</h3>
+    <p>We aim to respond within 24 hours.</p>
+  </div>
 
-          <div className="m-lg-4 mt-3 text-center w-100 p-5" style={{ backgroundColor: 'rgb(255, 211, 211)', borderRadius: '10px' }}>
-            <img src="images/contact-us/span.w-32 (2).png" alt="" />
-            <h2 className="pt-4" style={{ fontSize:'25px'}}>+91-96390 17070</h2>
-            <h4 className="pt-3 fw-normal">Our calls hours are Mon-sat 9am-6:30pm.</h4>
-          </div>
-        </div>
-      </div>
+  <div className="contact-card">
+    <img src="images/contact-us/span.w-32 (1).png" alt="" />
+    <h3>BMW Steels Ltd</h3>
+    <p>55, Pritam Road, Dalanwala, Dehradun-248001</p>
+  </div>
+
+  <div className="contact-card">
+    <img src="images/contact-us/span.w-32 (2).png" alt="" />
+    <h3>+91-96390 17070</h3>
+    <p>Mon–Sat, 9am–6:30pm</p>
+  </div>
+
+</div>
       {/* Section-1 End */}
 
       {/* Section-2 */}
-      <div className="px-lg-5">
-        <div className="px-md-5 p-3 d-lg-flex">
-          <div className="w-100">
-            <h2 className="mobile-fonts-heading" style={{ fontSize: '50px' }}>
-              Connect with Us
-            </h2>
-            <h4 className="pt-3 fw-normal">
-              We value your interest and are here to help! Whether you have questions about our services, need support, or want to explore partnership opportunities, please don't hesitate to reach out.
-            </h4>
+      <div className="contact-section">
 
-            <div className="d-md-flex">
-              <div className="w-100">
-                <h3 className="pt-3 fw-normal" style={{ color: 'red' }}>Corporate Office</h3>
-                <h4 className="pt-3 fw-normal">
-                  BMW Steels Ltd<br />
-                  55, Pritam Road, Dalanwala, Dehradun-248001<br />
-                  Mobile: +91-96390 17070<br />
-                  Email: sales@bmwsteels.com
-                </h4>
-              </div>
+  <div className="contact-container">
 
-              <div className="w-100">
-                <h3 className="pt-3 fw-normal" style={{ color: 'red' }}>Head Office</h3>
-                <h4 className="pt-3 fw-normal">
-                  BMW Steels Ltd<br />
-                  Shiv Ganga Industrial Estate, Bhagwanpur, Haridwar (U.K.) – 247667<br />
-                  Mobile: +91 98377 55569
-                </h4>
-              </div>
-            </div>
+    {/* LEFT SIDE */}
+    <div className="contact-info">
 
-            <div className="d-md-flex">
-              <div className="w-100">
-                <h3 className="pt-3 fw-normal" style={{ color: 'red' }}>Marketing Office</h3>
-                <h4 className="pt-3 fw-normal">
-                  BMW Steels Ltd<br />
-                  705, 7th Floor, RG Trade Tower, B-7 Netaji Subhash Place, Pitam Pura, New Delhi - 110034
-                </h4>
-              </div>
-            </div>
-          </div>
+      <h2>Connect with Us</h2>
 
-          <div className="w-100 d-flex justify-content-center align-items-center mt-3 mt-md-0">
-            <form className="p-5 w-100" style={{ backgroundColor: 'rgb(233, 233, 233)', borderRadius: '10px', boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}>
-              <h1 className="text-center">Get in touch</h1>
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
-                <input type="text" className="form-control" placeholder="Enter your Name" id="exampleInputEmail1" />
-              </div>
+      <p className="contact-desc">
+        We value your interest and are here to help! Whether you have questions about our services, need support, or want to explore partnership opportunities, please don't hesitate to reach out.
+      </p>
 
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
-                <input type="email" className="form-control" placeholder="Enter your Email" id="exampleInputEmail1" />
-              </div>
+      <div className="office-grid">
 
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Phone Number</label>
-                <input type="tel" className="form-control" placeholder="Enter your Phone Number" id="exampleInputEmail1" />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" />
-              </div>
-
-              <div className="text-center">
-                <button type="submit" style={{ backgroundColor: 'red', border: 'none' }} className="btn btn-primary mb-3">
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+        <div>
+          <h4>Corporate Office</h4>
+          <p>
+            BMW Steels Ltd<br />
+            55, Pritam Road, Dehradun<br />
+            +91-96390 17070<br />
+            sales@bmwsteels.com
+          </p>
         </div>
+
+        <div>
+          <h4>Head Office</h4>
+          <p>
+            BMW Steels Ltd<br />
+            Bhagwanpur, Haridwar<br />
+            +91 98377 55569
+          </p>
+        </div>
+
+        <div>
+          <h4>Marketing Office</h4>
+          <p>
+            705, RG Trade Tower, NSP, New Delhi
+          </p>
+        </div>
+
       </div>
+
+    </div>
+
+    {/* RIGHT SIDE FORM */}
+    <div className="contact-form">
+      <form>
+
+        <h3>Get in Touch</h3>
+
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <input type="tel" placeholder="Phone Number" />
+        <textarea rows="3" placeholder="Description"></textarea>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</div>
       {/* Section-2 End */}
 
       {/* Map */}
@@ -170,6 +161,147 @@ export default function Index8(){
       </div>
       {/* Map End */}
  </div>
+ <style jsx>{`
+ .contact-cards {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.contact-card {
+  background: #ffd3d3;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.contact-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  color: #444;
+  font-size: 14px;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+  .contact-section {
+  padding: 60px 20px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+  .contact-info {
+     /* 🔥 pushes it right */
+  padding-left: 22px;  /* optional spacing */
+}
+
+/* LEFT */
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-desc {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.office-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.office-grid h4 {
+  color: red;
+  font-size: 16px;
+}
+
+.office-grid p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* RIGHT FORM */
+.contact-form {
+  background: #eee;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transform: translateX(-20px);
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  width: 100%;
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+    .contact-form {
+  background: #eee;
+  padding: 30px;
+  border-radius: 12px;
+  margin-left:30px;
+  
+}
+  .contact-card {
+  background: #ffd3d3;
+  border-radius: 12px;
+  padding: 10px 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+}
+
+
+
+`}</style>
         </>
 
     )}
