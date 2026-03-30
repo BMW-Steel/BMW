@@ -18,7 +18,7 @@ const VideoSection = () => {
   return (
   <video
   ref={videoRef}
-  poster="images/section-4.jpg"
+  poster="images/section4.jpg"
   id="myVideo"
   src="images/banner-video/BMW0.3.mp4"
   loop
@@ -121,16 +121,13 @@ const Section4 = () => {
 
 .video-2 {
   width: 100%;
-  height: 420px;
+  max-width: 854px;          /* 🔥 exact max width */
+  aspect-ratio: 854 / 480;   /* 🔥 exact ratio */
   object-fit: cover;
-  object-position: center;
-  aspect-ratio: 16 / 9;
-  height: auto;
-
   border-radius: 6px;
-  
-  /* 🔥 reduces visual dominance */
   background: black;
+  display: block;
+  margin: auto;              /* center it */
 }
 
 /* MOBILE */
@@ -145,7 +142,7 @@ const Section4 = () => {
   }
 
   .video-2 {
-    height: 250px;
+    max-width: 100%;
   }
 }
 
