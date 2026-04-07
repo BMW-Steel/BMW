@@ -429,11 +429,12 @@ export default function Index4(){
 .rd-partners {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap:10px
+  
 }
 
 .rd-partners img {
-  max-width: 200px;
+  width: 120px;
 }
 
 /* MOBILE */
@@ -459,8 +460,9 @@ export default function Index4(){
     rd-partners {
     flex-direction: row;
     align-items: center;
-    gap:10px
+    
     }
+    
 }
 
 `}</style>

@@ -318,6 +318,8 @@ export default function Index3(){
               autoPlay
               loop
               muted
+              playsInline
+                  webkit-playsinline
             />
           </div>
 

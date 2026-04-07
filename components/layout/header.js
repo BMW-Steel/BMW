@@ -139,7 +139,8 @@ export default function Header() {
 }
   @media (min-width: 768px) {
  .navbar-brand{
-    margin-left: 50px;}
+    margin-left: 50px;
+    }
 }
 
 

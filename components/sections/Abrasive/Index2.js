@@ -23,6 +23,8 @@ export default function Index2(){
         autoPlay
         loop
         muted
+        playsInline
+        webkit-playsinline
       />
     </div>
   </div>

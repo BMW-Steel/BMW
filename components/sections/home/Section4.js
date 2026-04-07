@@ -27,6 +27,8 @@ const VideoSection = () => {
   disablePictureInPicture     // 🔥 optional (removes PiP)
   crossOrigin="anonymous"
   className="video-2"
+  playsInline
+  webkit-playsinline
  
 />
   );
