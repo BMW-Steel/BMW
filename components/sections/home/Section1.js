@@ -206,6 +206,8 @@ export default function Section1() {
                   autoPlay
                   loop
                   muted
+                  playsInline
+                  webkit-playsinline
                 />
               </div>
             </div>
@@ -239,6 +241,8 @@ export default function Section1() {
                   autoPlay
                   loop
                   muted
+                  playsInline
+                  webkit-playsinline
                 />
               </div>
             </div>

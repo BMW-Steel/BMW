@@ -59,6 +59,8 @@ export default function Section3() {
           autoPlay
           loop
           muted
+          playsInline
+          webkit-playsinline
         />
 
         <p className="desc-text mt-3">

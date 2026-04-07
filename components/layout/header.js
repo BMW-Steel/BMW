@@ -137,10 +137,36 @@ export default function Header() {
   color: red !important;
   border-bottom: 2px solid red;
 }
-  @media (min-width: 768px) {
- .navbar-brand{
-    margin-left: 50px;
+  @media (max-width: 768px) {
+
+  /* 🔥 MAKE FULL WIDTH FLEX */
+  .navbar .d-flex.align-items-center {
+    width: 100%;
+    justify-content: space-between;
+  
+  }
+
+  /* 🔥 MOVE GOOGLE TRANSLATE + LOGO TO LEFT */
+  #google_translate_element {
+    position: static !important;
+    margin-right: 8px;
+  }
+
+  .navbar-brand {
+  margin-left: auto;   /* 🔥 pushes logo to right */
+  margin-bottom: 20px;
+}
+    .navbar-brand img {
+      width: 35px;
+      height: auto;
+      
     }
+
+  /* 🔥 PUSH HAMBURGER TO RIGHT */
+  .navbar-toggler {
+    margin-left: 0px;
+  }
+
 }
 
 
