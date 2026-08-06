@@ -349,20 +349,20 @@ export default function Index3(){
 
 .section-wrapper.light {
   background: #f9f9f9;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 /* GRID SYSTEM */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 48px;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .align-center {
@@ -386,14 +386,14 @@ export default function Index3(){
   width: 100%;
   max-width: 700px;
   background: #fff;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .table-row td {
   background: #f48221;
-  padding: 10px;
+  padding: 12px;
 }
 
 /* ALT ROW */
@@ -428,12 +428,15 @@ export default function Index3(){
     font-size: 20px;
   }
   .section-wrapper {
-  padding: 30px 0;
+  padding: 40px 0;
+    }
+  .section-wrapper.light {
+  padding: 40px 0;
     }
 }
   /* SECTION */
 .section-wrapper {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 /* CONTAINER */
@@ -447,7 +450,7 @@ export default function Index3(){
 .grid-2 {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
+  gap: 48px;
 }
 
 .align-center {
@@ -496,7 +499,7 @@ export default function Index3(){
 .grid-2 {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 50px;
+  gap: 48px;
 }
 
 .align-center {
@@ -548,7 +551,7 @@ export default function Index3(){
 }
   /* PRODUCT BLOCK */
 .product-block {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* TITLE */
@@ -565,7 +568,7 @@ export default function Index3(){
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 32px;
 }
 
 /* IMAGE */
@@ -586,12 +589,12 @@ export default function Index3(){
   .main-title {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 /* BLOCK */
 .product-block {
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 /* TITLE */
@@ -608,13 +611,13 @@ export default function Index3(){
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 24px;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 24px;
 }
 
 /* IMAGE CARD */
@@ -699,7 +702,7 @@ export default function Index3(){
 .content-stack {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 🔥 reduces gap between sections */
+  gap: 24px; /* 🔥 reduces gap between sections */
 }
 
 /* TEXT */
@@ -713,7 +716,7 @@ export default function Index3(){
 /* IMAGE CARD */
 .content-card {
   background: #fff;
-  padding: 20px;
+  padding: 24px;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   text-align: center;
@@ -757,7 +760,13 @@ export default function Index3(){
   }
 }
   .section-wrapper2 {
-  padding: 30px 0;
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper2 {
+    padding: 40px 0;
+  }
 }
 
 `}</style>

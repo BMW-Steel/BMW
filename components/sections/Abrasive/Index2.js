@@ -122,7 +122,7 @@ export default function Index2(){
         <tbody>
           <tr className="alt"><td>Mesh Grit</td><td>White</td></tr>
           <tr><td>Micro powder grade</td><td>It is very suitable for wet sandblasting and polishing operations.</td></tr>
-          <tr className="alt"><td>Hardness</td><td>9 on Moh's scale </td></tr>
+          <tr className="alt"><td>Hardness</td><td>9 on Moh&apos;s scale </td></tr>
           <tr><td>Metal Removal</td><td>Minimal</td></tr>
           <tr className="alt"><td>Typical Applications</td><td>Polishing, lapping, refractories, ceramics, fire retardants/smoke suppressant</td></tr>
           
@@ -256,7 +256,7 @@ export default function Index2(){
 }
 
 .abrasive-section {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 .abrasive-section.light {
@@ -267,7 +267,7 @@ export default function Index2(){
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 32px;
 }
 
 /* IMAGE CARD */
@@ -280,7 +280,7 @@ export default function Index2(){
 /* TABLE */
 .table-card {
   background: white;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -291,7 +291,7 @@ export default function Index2(){
 }
   .table-row td {
   background: #f48221;
-  padding: 10px;
+  padding: 12px;
 }
 
 /* ALT ROW */
@@ -314,7 +314,7 @@ export default function Index2(){
     font-size: 22px;
   }
     .abrasive-section {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 }
   /* HEADING SYSTEM */

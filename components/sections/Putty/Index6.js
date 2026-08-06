@@ -121,7 +121,7 @@ export default function Index6(){
 
 /* HERO */
 .putty-hero {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 /* HEADER */
@@ -135,11 +135,11 @@ export default function Index6(){
 .putty-title {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .putty-desc {
-  margin-top: 10px;
+  margin-top: 16px;
   color: #555;
   max-width: 700px;
   margin-inline: auto;
@@ -149,12 +149,12 @@ export default function Index6(){
 
 /* CAROUSEL */
 .putty-carousel {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* SECTION */
 .putty-section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .putty-section.light {
@@ -165,7 +165,7 @@ export default function Index6(){
 .section-heading {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 /* LIST */
@@ -176,8 +176,8 @@ export default function Index6(){
 
 .putty-list li {
   position: relative;
-  padding-left: 25px;
-  margin-bottom: 15px;
+  padding-left: 24px;
+  margin-bottom: 8px;
   color: #444;
   font-size: 16px;
 }
@@ -192,7 +192,7 @@ export default function Index6(){
 /* TABLE */
 .table-card {
   background: white;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -208,7 +208,7 @@ export default function Index6(){
 
 /* STORAGE */
 .storage-box {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .storage-box h4 {
@@ -224,6 +224,14 @@ export default function Index6(){
 @media (max-width: 768px) {
   .putty-title {
     font-size: 28px;
+  }
+
+  .putty-hero {
+    padding: 40px 0;
+  }
+
+  .putty-section {
+    padding: 40px 0;
   }
 }
 

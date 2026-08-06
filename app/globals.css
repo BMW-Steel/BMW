@@ -72,4 +72,13 @@ html {
 img, video {
   max-width: 100%;
   height: auto;
+
+  /* 🔒 Media download protection: prevent drag-out & long-press save */
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -48,8 +48,8 @@ export default function Header() {
 
             <li className="nav-item px-2">
               <Link
-                className={`nav-link text-white ${isActive('/CastBasalt') ? 'active border-bottom' : ''}`}
-                href="/CastBasalt"
+                className={`nav-link text-white ${isActive('/castbasalt') ? 'active border-bottom' : ''}`}
+                href="/castbasalt"
                 style={navLinkStyle}
               >
                 Cast Basalt
@@ -58,8 +58,8 @@ export default function Header() {
 
             <li className="nav-item px-2">
               <Link
-                className={`nav-link text-white ${isActive('/FusedAluminaAbrasive') ? 'active border-bottom' : ''}`}
-                href="/FusedAluminaAbrasive"
+                className={`nav-link text-white ${isActive('/fusedaluminaabrasive') ? 'active border-bottom' : ''}`}
+                href="/fusedaluminaabrasive"
                 style={navLinkStyle}
               >
                 Fused Alumina
@@ -68,8 +68,8 @@ export default function Header() {
 
             <li className="nav-item px-2">
               <Link
-                className={`nav-link text-white ${isActive('/AluminaCeramic') ? 'active border-bottom' : ''}`}
-                href="/AluminaCeramic"
+                className={`nav-link text-white ${isActive('/aluminaceramic') ? 'active border-bottom' : ''}`}
+                href="/aluminaceramic"
                 style={navLinkStyle}
               >
                 Alumina Ceramic
@@ -88,20 +88,20 @@ export default function Header() {
                 Other Products
               </a>
               <ul className="dropdown-menu shadow">
-                <li><Link className="dropdown-item" href="/ResearchDevelopmentDepartment">R & D Department</Link></li>
+                <li><Link className="dropdown-item" href="/researchdevelopmentdepartment">R & D Department</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" href="/ChemicallyBondedCompoundSeries">Chemically Bonded</Link></li>
+                <li><Link className="dropdown-item" href="/chemicallybondedcompoundseries">Chemically Bonded</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" href="/WearSealDiamondPutty">Wear Seal Putty</Link></li>
+                <li><Link className="dropdown-item" href="/wearsealdiamondputty">Wear Seal Putty</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" href="/BasalticMineralFertilizer">BMW Fertilizer</Link></li>
+                <li><Link className="dropdown-item" href="/basalticmineralfertilizer">BMW Fertilizer</Link></li>
               </ul>
             </li>
 
             <li className="nav-item px-2">
               <Link
-                className={`nav-link text-white ${isActive('/Blogs') ? 'active border-bottom' : ''}`}
-                href="/Blogs"
+                className={`nav-link text-white ${isActive('/blogs') ? 'active border-bottom' : ''}`}
+                href="/blogs"
                 style={navLinkStyle}
               >
                 Blogs
@@ -110,8 +110,8 @@ export default function Header() {
             {/* 🔥 MOBILE ONLY CONTACT LINK */}
 <li className="nav-item px-2 d-lg-none">
   <Link
-    className={`nav-link text-white ${isActive('/ContactUs') ? 'active border-bottom' : ''}`}
-    href="/ContactUs"
+    className={`nav-link text-white ${isActive('/contactus') ? 'active border-bottom' : ''}`}
+    href="/contactus"
     style={navLinkStyle}
   >
     Contact Us
@@ -124,7 +124,7 @@ export default function Header() {
         <div className="d-none d-lg-block ms-lg-4">
           <Link
             className="btn px-4 py-2 fw-bold text-white shadow-sm"
-            href="/ContactUs"
+            href="/contactus"
             style={{ backgroundColor: "#e60000", borderRadius: "5px" }}
           >
             Get a Quote <i className="fa-solid fa-arrow-right ms-2 fs-4"></i>
@@ -137,36 +137,53 @@ export default function Header() {
   color: red !important;
   border-bottom: 2px solid red;
 }
-  @media (max-width: 768px) {
 
-  /* 🔥 MAKE FULL WIDTH FLEX */
+/* Tablet & mobile (menu is collapsed below lg = 992px):
+   language selector + brand share one aligned row */
+@media (max-width: 991.98px) {
   .navbar .d-flex.align-items-center {
-    width: 100%;
+    flex: 1 1 auto;
     justify-content: space-between;
-  
-  }
-
-  /* 🔥 MOVE GOOGLE TRANSLATE + LOGO TO LEFT */
-  #google_translate_element {
-    position: static !important;
-    margin-right: 8px;
   }
 
   .navbar-brand {
-  margin-left: auto;   /* 🔥 pushes logo to right */
-  margin-bottom: 20px;
-}
-    .navbar-brand img {
-      width: 35px;
-      height: auto;
-      
-    }
+    margin-left: auto;   /* 🔥 pushes logo to right */
+  }
 
-  /* 🔥 PUSH HAMBURGER TO RIGHT */
+  .navbar-brand img {
+    width: 35px;
+    height: auto;
+  }
+
   .navbar-toggler {
     margin-left: 0px;
   }
+}
 
+/* Compact desktop: keep the full menu visible on smaller desktop widths */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-nav {
+    font-size: 14px !important;
+  }
+
+  .nav-item {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar .btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
 
 

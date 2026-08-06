@@ -1,9 +1,9 @@
-"use client";         
+"use client";
 
 import React, { useEffect } from "react";
 
 export default function Section3() {
-  /* ----------  same counter logic as before  ---------- */
+  /* ----------  counter animation (triggers on scroll into view)  ---------- */
   useEffect(() => {
     const targets = [25, 8, 300];
     const duration = 1500;
@@ -11,7 +11,9 @@ export default function Section3() {
       document.getElementById("counter1"),
       document.getElementById("counter2"),
       document.getElementById("counter3"),
-    ];
+    ].filter(Boolean);
+
+    if (counters.length === 0) return;
 
     const animate = (el, target) => {
       const start = performance.now();
@@ -23,12 +25,28 @@ export default function Section3() {
       requestAnimationFrame(step);
     };
 
-    counters.forEach((el, i) => el && animate(el, targets[i]));
+    let animated = false;
+    const runOnce = () => {
+      if (animated) return;
+      animated = true;
+      counters.forEach((el, i) => animate(el, targets[i]));
+    };
 
-    const onFocus = () =>
-      counters.forEach((el, i) => el && animate(el, targets[i]));
-    window.addEventListener("focus", onFocus);
-    return () => window.removeEventListener("focus", onFocus);
+    // Animate only when the counters scroll into view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            runOnce();
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    counters.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
   /* ----------------------------------------------------- */
 
@@ -108,7 +126,7 @@ export default function Section3() {
 <style jsx>{`
 /* SECTION */
 .section-wrapper {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 /* CONTAINER */
@@ -122,7 +140,7 @@ export default function Section3() {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 48px;
 }
 
 .align-center {
@@ -159,7 +177,7 @@ export default function Section3() {
 /* COUNTERS */
 .counter-grid {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
@@ -167,7 +185,7 @@ export default function Section3() {
 .counter-card {
   background: #f4f4f4;
   border-radius: 14px;
-  padding: 20px;
+  padding: 24px;
   min-width: 150px;
   text-align: center;
   flex: 1;
@@ -185,7 +203,7 @@ export default function Section3() {
 /* LABEL */
 .counter-label {
   font-size: 13px;
-  margin-top: 5px;
+  margin-top: 8px;
   color: #555;
 }
 
@@ -193,6 +211,10 @@ export default function Section3() {
 @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .section-wrapper {
+    padding: 40px 0;
   }
 
   .main-title {

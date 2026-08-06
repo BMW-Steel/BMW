@@ -59,7 +59,7 @@ const Section4 = () => {
 
         <Link
           className="btn btn-danger mt-3"
-          href="/ContactUs"
+          href="/contactus"
         >
           Know More
         </Link>
@@ -78,7 +78,7 @@ const Section4 = () => {
 <style jsx>{`
 /* SECTION */
 .section-wrapper {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 .section-wrapper.light {
@@ -96,7 +96,7 @@ const Section4 = () => {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 48px;
 }
 
 .align-center {
@@ -137,6 +137,10 @@ const Section4 = () => {
   .grid-2 {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .section-wrapper {
+    padding: 40px 0;
   }
 
   .main-title {

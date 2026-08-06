@@ -27,7 +27,7 @@ export default function Index8(){
                 Contact us
               </h2>
               <h4 className="pt-4 text-white d-none d-md-block" style={{ color: 'rgb(66, 66, 66)', fontWeight: '400', textAlign: 'justify' }}>
-                Your inquiries are important to us! If you're looking for assistance with our products or want to discuss potential collaborations, we're just a message away.
+                Your inquiries are important to us! If you&apos;re looking for assistance with our products or want to discuss potential collaborations, we&apos;re just a message away.
               </h4>
               
             </div>
@@ -41,7 +41,7 @@ export default function Index8(){
                 Contact us
               </h2>
               <h4 className="pt-4 text-white d-none d-md-block" style={{ color: 'rgb(66, 66, 66)', fontWeight: '400', textAlign: 'justify' }}>
-                Your inquiries are important to us! If you're looking for assistance with our products or want to discuss potential collaborations, we're just a message away.
+                Your inquiries are important to us! If you&apos;re looking for assistance with our products or want to discuss potential collaborations, we&apos;re just a message away.
               </h4>
               
             </div>
@@ -87,7 +87,7 @@ export default function Index8(){
       <h2>Connect with Us</h2>
 
       <p className="contact-desc">
-        We value your interest and are here to help! Whether you have questions about our services, need support, or want to explore partnership opportunities, please don't hesitate to reach out.
+        We value your interest and are here to help! Whether you have questions about our services, need support, or want to explore partnership opportunities, please don&apos;t hesitate to reach out.
       </p>
 
       <div className="office-grid">
@@ -167,21 +167,21 @@ export default function Index8(){
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 40px 20px;
+  gap: 24px;
+  padding: 80px 20px;
 }
 
 .contact-card {
   background: #ffd3d3;
   border-radius: 12px;
-  padding: 40px 20px;
+  padding: 32px 24px;
   text-align: center;
   transition: 0.3s ease;
 }
 
 .contact-card img {
   width: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .contact-card h3 {
@@ -198,7 +198,7 @@ export default function Index8(){
   transform: translateY(-5px);
 }
   .contact-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .contact-container {
@@ -206,29 +206,29 @@ export default function Index8(){
   margin: auto;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
+  gap: 48px;
   align-items: start;
 }
   .contact-info {
      /* 🔥 pushes it right */
-  padding-left: 22px;  /* optional spacing */
+  padding-left: 24px;  /* optional spacing */
 }
 
 /* LEFT */
 .contact-info h2 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .contact-desc {
   color: #555;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: 16px;
 }
 
 .office-grid {
   display: grid;
-  gap: 20px;
+  gap: 24px;
 }
 
 .office-grid h4 {
@@ -245,7 +245,7 @@ export default function Index8(){
 /* RIGHT FORM */
 .contact-form {
   background: #eee;
-  padding: 30px;
+  padding: 32px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transform: translateX(-20px);
@@ -253,14 +253,14 @@ export default function Index8(){
 
 .contact-form h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  margin-bottom: 12px;
-  padding: 10px;
+  margin-bottom: 16px;
+  padding: 12px;
   border-radius: 8px;
   border: 1px solid #ddd;
 }
@@ -269,7 +269,7 @@ export default function Index8(){
   width: 100%;
   background: red;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 8px;
 }
@@ -278,6 +278,11 @@ export default function Index8(){
 @media (max-width: 768px) {
   .contact-cards {
     grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
   }
 
   .contact-container {
@@ -285,7 +290,7 @@ export default function Index8(){
   }
     .contact-form {
   background: #eee;
-  padding: 30px;
+  padding: 32px;
   border-radius: 12px;
   margin-left:30px;
   
@@ -293,7 +298,7 @@ export default function Index8(){
   .contact-card {
   background: #ffd3d3;
   border-radius: 12px;
-  padding: 10px 10px;
+  padding: 32px 24px;
   text-align: center;
   transition: 0.3s ease;
 }

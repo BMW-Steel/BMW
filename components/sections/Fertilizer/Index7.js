@@ -27,7 +27,7 @@ export default function Index7(){
         </p>
 
         <p>
-          Boost Your Agricultural Productivity with BMW's Revolutionary Mineral fertilizer Solutions. To restore soil health, fight crop diseases, and improve yields with our proven natural mineral nutrition solutions.
+          Boost Your Agricultural Productivity with BMW&apos;s Revolutionary Mineral fertilizer Solutions. To restore soil health, fight crop diseases, and improve yields with our proven natural mineral nutrition solutions.
         </p>
 
         <p>
@@ -102,7 +102,7 @@ export default function Index7(){
 
 /* SECTION */
 .fert-section {
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 .fert-section.light {
@@ -126,15 +126,15 @@ export default function Index7(){
 .fert-title {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* GRID */
 .fert-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
-  margin-top: 50px;
+  gap: 48px;
+  margin-top: 48px;
   align-items: center;
 }
 
@@ -142,7 +142,7 @@ export default function Index7(){
 .fert-text p {
   color: #444;
   line-height: 1.8;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
   max-width: 520px;
 }
@@ -161,14 +161,14 @@ export default function Index7(){
 
 /* BENEFITS */
 .fert-benefits {
-  margin-top: 40px;
+  margin-top: 48px;
   display: grid;
-  gap: 20px;
+  gap: 24px;
 }
 
 .benefit-item {
   background: #fff;
-  padding: 20px;
+  padding: 24px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   line-height: 1.6;
@@ -178,11 +178,15 @@ export default function Index7(){
   display: block;
   font-weight: 600;
   color: red;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .fert-section {
+    padding: 40px 20px;
+  }
+
   .fert-grid {
     grid-template-columns: 1fr;
     text-align: center;

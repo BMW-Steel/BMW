@@ -4,7 +4,14 @@ import React, { useEffect } from 'react';
 declare global {
     interface Window {
         googleTranslateElementInit?: () => void;
-        google?: any;
+        google?: {
+            translate?: {
+                TranslateElement: new (
+                    options: { pageLanguage: string },
+                    elementId: string
+                ) => unknown;
+            };
+        };
     }
 }
 
@@ -16,7 +23,7 @@ const GoogleTranslate: React.FC = () => {
         window.googleTranslateElementInit = () => {
             
             const element = document.getElementById('google_translate_element');
-            if (element && element.innerHTML === '') {
+            if (element && element.innerHTML === '' && window.google?.translate) {
                 new window.google.translate.TranslateElement(
                     { pageLanguage: 'en' },
                     'google_translate_element'
@@ -44,25 +51,23 @@ const GoogleTranslate: React.FC = () => {
 
     return (
         <>
-        <div 
-  id="google_translate_element" 
-  style={{ 
-    zIndex: 1000, 
-    position: 'absolute', 
-    top: '70px', 
-    right: '10px',      // 🔥 fixed for mobile
-  }}
-></div>
-<style jsx>{`
-@media (min-width: 768px) {
-  #google_translate_element {
-    right: 36px !important;
-  }
-}
+        {/* In-flow navbar item: keeps the language selector aligned
+            on every screen with consistent spacing */}
+        <div id="google_translate_element" />
+        <style jsx>{`
+            #google_translate_element {
+                display: flex;
+                align-items: center;
+                margin-right: 16px;   /* consistent gap before the logo */
+            }
 
-
-`}</style>
-</>
+            @media (max-width: 991.98px) {
+                #google_translate_element {
+                    margin-right: 8px;   /* tighter gap on tablet/mobile rows */
+                }
+            }
+        `}</style>
+        </>
     );
 };
 

@@ -47,7 +47,7 @@ export default function Section2() {
       <style jsx>{`
 /* SECTION */
 .section-wrapper {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
 /* CONTAINER */
@@ -61,11 +61,11 @@ export default function Section2() {
 .about-card {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 50px;
+  gap: 48px;
 
   background: #f4f4f4;
   border-radius: 20px;
-  padding: 40px;
+  padding: 32px;
   align-items: center;
 }
 
@@ -80,14 +80,14 @@ export default function Section2() {
 .main-title {
   font-size: 32px;   /* ✅ fixed */
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .highlight-text {
   color: red;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 /* DESCRIPTION */
@@ -95,7 +95,7 @@ export default function Section2() {
   font-size: 16px;   /* ✅ standard */
   line-height: 1.5;
   color: #444;
-  margin-top: 10px;
+  margin-top: 16px;
   text-align: justify;
 }
 
@@ -113,18 +113,18 @@ export default function Section2() {
   width: 120px;
   height: 120px;
   border-radius: 16px;
-  margin-top: 15px;
+  margin-top: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
   .section-wrapper {
-    padding: 30px 0;
+    padding: 40px 0;
   }
   .about-card {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 24px;
     text-align: center;
   }
 

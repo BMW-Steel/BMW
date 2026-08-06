@@ -151,8 +151,8 @@ export default function Index8(){
 .privacy-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 40px;
-  padding: 60px 20px;
+  gap: 48px;
+  padding: 80px 20px;
 }
 
 /* SIDEBAR */
@@ -168,7 +168,7 @@ export default function Index8(){
 }
 
 .privacy-sidebar li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .privacy-sidebar a {
@@ -195,14 +195,14 @@ export default function Index8(){
 
 /* BLOCK */
 .policy-block {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 /* SECTION TITLE */
 .section-title {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 /* TEXT */
@@ -214,12 +214,12 @@ export default function Index8(){
 
 /* LIST */
 .policy-block ul {
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 .policy-block li {
   font-size: 15px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 /* SCROLL SMOOTH */
@@ -231,6 +231,7 @@ html {
 @media (max-width: 992px) {
   .privacy-layout {
     grid-template-columns: 1fr;
+    padding: 40px 20px;
   }
 
   .privacy-sidebar {

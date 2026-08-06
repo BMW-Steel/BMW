@@ -22,10 +22,49 @@ export default function Section5(){
     });
   });
 }, []);
+
+  useEffect(() => {
+    /* 🔥 Native hand-gesture swipe for the mobile certifications carousel.
+       Drives the existing prev/next buttons so swipe works on every device. */
+    const carousel = document.getElementById("carouselWithThumbnailss");
+    if (!carousel) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+
+    const onTouchStart = (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    };
+
+    const onTouchEnd = (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      /* horizontal swipe only, past a comfortable threshold */
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+      const dir = dx < 0 ? "next" : "prev";
+      const btn = carousel.querySelector(`[data-bs-slide="${dir}"]`);
+      if (btn) btn.click();
+    };
+
+    carousel.addEventListener("touchstart", onTouchStart, { passive: true });
+    carousel.addEventListener("touchend", onTouchEnd, { passive: true });
+
+    return () => {
+      carousel.removeEventListener("touchstart", onTouchStart);
+      carousel.removeEventListener("touchend", onTouchEnd);
+    };
+  }, []);
+
     return (
         <>
        <div className="d-none d-lg-block">
-  <div className="p-5 text-center">
+  <div className="gallery-section text-center">
 
   {/* HEADING */}
   <h5 className="section-sub">CERTIFICATIONS</h5>
@@ -35,7 +74,7 @@ export default function Section5(){
   </p>
 
   {/* 🔥 MAIN PREVIEW (TOP) */}
-  <div id="galleryCarousel" className="carousel slide mt-5" data-bs-ride="carousel">
+  <div id="galleryCarousel" className="carousel slide mt-5" data-bs-ride="carousel" data-bs-touch="false">
     <div className="carousel-inner">
 
       {["file-10.jpg","file-20.jpg","file-30.jpg","file-40.jpg","file-50.jpg"].map((img, index) => (
@@ -85,7 +124,7 @@ export default function Section5(){
 </div>
 
 <div className="d-lg-none">
-  <div className="p-2 p-md-5 d-flex flex-column flex-md-row justify-content-between align-items-between mt-5">
+  <div className="section-mobile d-flex flex-column flex-md-row justify-content-between align-items-between">
     <div className="carousel-thumbnails mt-3 w-100 text-center d-none">
       <div className="d-flex flex-column justify-content-start align-items-center">
         <h2 className="section-title" >
@@ -133,7 +172,7 @@ export default function Section5(){
       
     </div>
 
-    <div id="carouselWithThumbnailss" className="carousel slide p-2 w-100" data-bs-ride="carousel">
+    <div id="carouselWithThumbnailss" className="carousel slide p-2 w-100" data-bs-ride="carousel" data-bs-touch="false">
       <div>
         <h2 className="section-title" >
           Certifications and Authorizations
@@ -239,7 +278,7 @@ body {
 
 .section-desc {
   max-width: 700px;
-  margin: 10px auto;
+  margin: 16px auto;
   color: #555;
   line-height: 1.7;
   font-size: 16px;
@@ -259,7 +298,7 @@ body {
 .thumb-row {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -378,6 +417,21 @@ body {
 }
 .policy-block {
   scroll-margin-top: 100px; /* adjust according to navbar height */
+}
+
+/* SECTION */
+.gallery-section {
+  padding: 80px 20px;
+}
+
+.section-mobile {
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 40px 20px;
+  }
 }
 
 `}</style>

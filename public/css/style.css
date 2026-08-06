@@ -150,18 +150,10 @@
         .mobile-fonts-heading-sub{
           font-size: 20px !important;
           text-align: start !important;
-        }
-
-        .carousel-indicators {
+        }        .carousel-indicators {
         position: absolute !important;
-        top:450px !important;
-       
-
-        
-        
-
-        
-        
+        top: auto !important;
+        bottom: 10px !important;
       }
       .carousel-indicators button{
         width: 100% !important;
@@ -233,10 +225,19 @@
 
       .carousel-indicators {
         position: absolute !important;
-        top: 730px !important;
+        top: auto !important;
+        bottom: 15px !important;
 
         margin-left: 5% !important;
         margin-right: 5% !important;
+      }
+
+      /* Hide hero thumbnail indicators on very short viewports
+         so they can never overlap/crop below the video */
+      @media only screen and (max-height: 600px) {
+        .carousel-indicators {
+          display: none !important;
+        }
       }
 
 

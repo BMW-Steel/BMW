@@ -1,7 +1,45 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Index1(){
+
+  /* 🔥 Native hand-gesture swipe for the plant carousel (consistent with all carousels) */
+  useEffect(() => {
+    const carousel = document.getElementById("carouselExampleAutoplaying");
+    if (!carousel) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+
+    const onTouchStart = (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    };
+
+    const onTouchEnd = (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      /* horizontal swipe only, past a comfortable threshold */
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+      const dir = dx < 0 ? "next" : "prev";
+      const btn = carousel.querySelector(`[data-bs-slide="${dir}"]`);
+      if (btn) btn.click();
+    };
+
+    carousel.addEventListener("touchstart", onTouchStart, { passive: true });
+    carousel.addEventListener("touchend", onTouchEnd, { passive: true });
+
+    return () => {
+      carousel.removeEventListener("touchstart", onTouchStart);
+      carousel.removeEventListener("touchend", onTouchEnd);
+    };
+  }, []);
+
     return (
         <>
 {/* <script>
@@ -93,6 +131,7 @@ export default function Index1(){
         id="carouselExampleAutoplaying"
         className="carousel slide"
         data-bs-ride="carousel"
+        data-bs-touch="false"
       >
 
         <div className="carousel-inner">
@@ -118,7 +157,8 @@ export default function Index1(){
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon"></span>
+          <span className="arrow-btn" aria-hidden="true">‹</span>
+          <span className="visually-hidden">Previous</span>
         </button>
 
         <button
@@ -127,7 +167,8 @@ export default function Index1(){
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon"></span>
+          <span className="arrow-btn" aria-hidden="true">›</span>
+          <span className="visually-hidden">Next</span>
         </button>
 
       </div>
@@ -341,7 +382,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
       </h3>
 
       <p className="desc-text">
-        BMW manufactures Cast Basalt cylinders in various sizes, as per the client's requirement. Basalt Cylindrical Liner are manufactured by Centrifugal Cylinder Casting.
+        BMW manufactures Cast Basalt cylinders in various sizes, as per the client&apos;s requirement. Basalt Cylindrical Liner are manufactured by Centrifugal Cylinder Casting.
       </p>
 
       <div className="image-grid">
@@ -645,7 +686,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 <style jsx>{`
 /* SECTION */
 .section-wrapper {
-  padding: 50px 0;
+  padding: 80px 0;
   
 }
 
@@ -653,7 +694,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 .container-custom {
   max-width: 1100px;
   margin: auto;
-  padding: 0 ;
+  padding: 0 20px;
 }
 
 /* HEADER */
@@ -678,26 +719,42 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 
 /* NAV BUTTONS */
 .custom-nav {
-  width: 50px;
-  height: 50px;
-  
-  border-radius: 50%;
+  width: auto;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .carousel-control-prev {
-  left: 15px;
+  left: 20px;
 }
 
 .carousel-control-next {
-  right: 15px;
+  right: 20px;
+}
+
+/* 🔥 CIRCULAR ARROW BUTTONS (consistent with all carousels) */
+.arrow-btn {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: red;
+  transform: scale(1.1);
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 .section-wrapper {
-  padding: 20px 0px;
+  padding: 40px 0;
 }
   .main-title {
     font-size: 24px;
@@ -714,30 +771,10 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 }
 }
 
-/* MAKE BUTTON AREA MORE VISIBLE */
+/* BUTTON AREA ALWAYS VISIBLE */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 60px;
-  height: 60px;
-  top: 50%;
-  transform: translateY(-50%);
   opacity: 1; /* always visible */
-}
-
-/* 🔥 ICON BACKGROUND */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.7);
-  background-size: 60% 60%;
-  border-radius: 50%;
-  padding: 20px;
-}
-
-/* 🔥 HOVER EFFECT */
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: red;
-  transform: scale(1.1);
 }
 
 /* 🔥 POSITION (closer to image) */
@@ -747,18 +784,6 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 
 .carousel-control-next {
   right: 20px;
-}
-
-/* 🔥 ADD SHADOW FOR VISIBILITY */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-/* REMOVE FADE EFFECT */
-.carousel-control-prev,
-.carousel-control-next {
-  filter: none;
 }
 
 
@@ -787,7 +812,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
   letter-spacing: 2px;
   font-size: 13px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -799,8 +824,8 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 .section-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  margin-top: 50px;
+  gap: 48px;
+  margin-top: 48px;
   align-items: center;
 }
 
@@ -812,7 +837,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 .section-text p {
   color: #444;
   line-height: 1.5;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   font-size: 16px;
 }
 
@@ -820,7 +845,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 .section-image-card {
   background: #fff;
   border-radius: 16px;
-  padding: 25px;
+  padding: 24px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.12);
   text-align: center;
   max-width: 380px;
@@ -836,7 +861,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 
 /* TEXT UNDER IMAGE */
 .image-info h4 {
-  margin-top: 12px;
+  margin-top: 16px;
   font-size: 18px;
 }
 
@@ -893,7 +918,7 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 
 
 .section-desc {
-  margin-top: 10px;
+  margin-top: 16px;
   color: #555;
   line-height: 1.5;
   max-width: 700px;
@@ -903,14 +928,14 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 
 /* BLOCK SPACING */
 .section-block {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* SECTION HEADING */
 .section-heading {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 /* TEXT */
@@ -927,11 +952,11 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
 }
 
 .custom-list li {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   font-size: 16px;
   color: #444;
   line-height: 1.5;
-  padding-left: 25px;
+  padding-left: 24px;
   position: relative;
 }
 
@@ -961,6 +986,10 @@ Unfortunately Indian basalt deposits lacks required chemical and physical proper
   .section-heading {
     font-size: 20px;
   }
+
+  .lining-section {
+    padding: 40px 20px;
+  }
 }
   img {
   border-radius: 12px;
@@ -974,7 +1003,7 @@ img:hover {
 
   .rd-section {
   background: #f4f4f4;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 /* 🔥 CONTAINER */
@@ -994,7 +1023,7 @@ img:hover {
 .rd-title {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
   color:red;
 }
 
@@ -1002,8 +1031,8 @@ img:hover {
 .rd-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  margin-top: 50px;
+  gap: 48px;
+  margin-top: 48px;
   align-items: center;
 }
 
@@ -1029,13 +1058,13 @@ img:hover {
 .rd-content h3 {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .rd-content p {
   color: #444;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
   
 }
@@ -1050,11 +1079,15 @@ img:hover {
   .rd-title {
     font-size: 28px;
   }
+
+  .rd-section {
+    padding: 40px 20px;
+  }
 }
   .table-card {
   background: #fff;
   border-radius: 14px;
-  padding: 15px;
+  padding: 24px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
@@ -1085,13 +1118,13 @@ img:hover {
 .table-subhead td {
   background: #d1d1d6;
   font-weight: 500;
-  padding: 10px;
+  padding: 12px;
 }
 
 /* ROW */
 .table-row td {
   background: #f48221;
-  padding: 10px;
+  padding: 12px;
 }
 
 /* ALT ROW */
@@ -1109,7 +1142,7 @@ img:hover {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 32px;
 }
 
 /* MOBILE */
@@ -1153,12 +1186,12 @@ img:hover {
 .main-title {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 /* PRODUCT BLOCK */
 .product-block {
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 /* TITLES */
@@ -1173,15 +1206,15 @@ img:hover {
   font-size: 16px;
   line-height: 1.5;
   color: #444;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 /* IMAGE GRID */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .image-grid img {
@@ -1197,16 +1230,16 @@ img:hover {
   text-align: center;
   font-size: 14px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* ROW LAYOUT */
 .product-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 48px;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 64px;
 }
 
 .product-row.reverse {
@@ -1253,7 +1286,7 @@ img:hover {
 
 /* BLOCK */
 .app-block {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 /* TITLE */
@@ -1261,9 +1294,7 @@ img:hover {
   font-size: 22px;
   font-weight: 600;
   color: red;
-  margin-bottom: 15px;
-  mt-3;
-  
+  margin-bottom: 16px;
 }
 
 /* GRID */
@@ -1275,7 +1306,7 @@ img:hover {
 .single-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 /* 🔥 CENTER ITEM PERFECTLY ALIGNED */
@@ -1302,7 +1333,7 @@ img:hover {
 /* TEXT */
 .card-item p {
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 8px;
   color: #444;
 }
 

@@ -2,7 +2,44 @@
 import React from "react";
 import { useEffect } from "react";
 export default function Section7(){
-  
+
+  /* 🔥 Native hand-gesture swipe for the plant carousel (same as other carousels) */
+  useEffect(() => {
+    const carousel = document.getElementById("plantCarousel");
+    if (!carousel) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+
+    const onTouchStart = (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    };
+
+    const onTouchEnd = (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      /* horizontal swipe only, past a comfortable threshold */
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+      const dir = dx < 0 ? "next" : "prev";
+      const btn = carousel.querySelector(`[data-bs-slide="${dir}"]`);
+      if (btn) btn.click();
+    };
+
+    carousel.addEventListener("touchstart", onTouchStart, { passive: true });
+    carousel.addEventListener("touchend", onTouchEnd, { passive: true });
+
+    return () => {
+      carousel.removeEventListener("touchstart", onTouchStart);
+      carousel.removeEventListener("touchend", onTouchEnd);
+    };
+  }, []);
+
     return (
         <>
 
@@ -21,7 +58,7 @@ export default function Section7(){
 
   {/* 🔥 CAROUSEL */}
   <div className="carousel-container">
-    <div id="plantCarousel" className="carousel slide" data-bs-ride="carousel">
+    <div id="plantCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
 
       <div className="carousel-inner">
 
@@ -34,12 +71,14 @@ export default function Section7(){
       </div>
 
       {/* 🔥 CUSTOM ARROWS */}
-      <button className="carousel-control-prev custom-nav" data-bs-target="#plantCarousel" data-bs-slide="prev">
-        <span className="arrow-btn">‹</span>
+      <button className="carousel-control-prev custom-nav" type="button" data-bs-target="#plantCarousel" data-bs-slide="prev">
+        <span className="arrow-btn" aria-hidden="true">‹</span>
+        <span className="visually-hidden">Previous</span>
       </button>
 
-      <button className="carousel-control-next custom-nav" data-bs-target="#plantCarousel" data-bs-slide="next">
-        <span className="arrow-btn">›</span>
+      <button className="carousel-control-next custom-nav" type="button" data-bs-target="#plantCarousel" data-bs-slide="next">
+        <span className="arrow-btn" aria-hidden="true">›</span>
+        <span className="visually-hidden">Next</span>
       </button>
 
     </div>
@@ -89,7 +128,7 @@ export default function Section7(){
 
 /* 🔥 WRAPPER */
 .section-wrapper {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 /* 🔥 HEADER */
@@ -108,7 +147,7 @@ export default function Section7(){
 .section-title {
   font-size: 42px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .section-title.small {
@@ -118,29 +157,19 @@ export default function Section7(){
 .section-desc {
   color: #555;
   line-height: 1.5;
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 16px;
 }
 
 /* 🔥 CAROUSEL */
 .carousel-container {
-  margin-top: 40px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
 }
-  /* FIX UNEVEN SLIDE SHIFT */
-.carousel-inner {
-  display: flex;
-}
-
+  /* SLIDES */
 .carousel-item {
-  
   text-align: center;
-}
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  display: block;
 }
  
 
@@ -179,6 +208,12 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: red;
+  transform: scale(1.1);
 }
 
 
@@ -191,7 +226,7 @@ width: 100%;
 .assurance-container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  gap: 48px;
   align-items: center;
   max-width: 1100px;
   margin: auto;
@@ -212,10 +247,10 @@ width: 100%;
 }
 
 .assurance-list li {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   font-size: 17px;
   color: #444;
-  padding-left: 28px;
+  padding-left: 24px;
   position: relative;
   line-height: 1.6;
 }
@@ -239,7 +274,7 @@ width: 100%;
 @media (max-width: 768px) {
   .assurance-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 32px;
   }
 
   .assurance-image img {
@@ -258,7 +293,7 @@ width: 100%;
 .assurance-container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
+  gap: 48px;
   align-items: center;
   max-width: 1100px;
   margin: auto;
@@ -288,10 +323,10 @@ width: 100%;
 }
 
 .assurance-list li {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   font-size: 17px;
   color: #444;
-  padding-left: 28px;
+  padding-left: 24px;
   position: relative;
   line-height: 1.6;
 }
@@ -315,7 +350,7 @@ width: 100%;
 @media (max-width: 768px) {
   .assurance-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 32px;
   }
 
   .assurance-image img {
@@ -334,11 +369,11 @@ width: 100%;
 }
 
 .carousel-control-prev.custom-nav {
-  left: calc(50% - 180px);
+  left: 10px;
 }
 
 .carousel-control-next.custom-nav {
-  right: calc(50% - 180px);
+  right: 10px;
 }
 }
   .policy-block {

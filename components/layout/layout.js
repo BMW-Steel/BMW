@@ -1,10 +1,16 @@
 "use client";
-import React, { children } from "react";
+import React from "react";
+import { usePathname } from "next/navigation";
 import Header from "./header";
 import Footer from "./footer";
 export default function Layout({children}) {
+    const pathname = usePathname();
+    const isHome = pathname === "/";
     return(
    <>
+   {/* 🔥 Floating buttons + modals are shown on the HOME page only */}
+   {isHome && (
+    <>
    <div className=" button-container ">
    <button type="button" className="btn btn-primary rotated-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Enquire Now
@@ -101,7 +107,10 @@ export default function Layout({children}) {
 
     </div>
   </div>
-</div>   <Header/>
+</div>
+    </>
+   )}
+   <Header/>
    {children}
    
    <Footer/>
@@ -246,17 +255,7 @@ export default function Layout({children}) {
 .modal.show .modal-dialog {
   transform: scale(1);
 }
-  @media (max-width: 768px) {
-  .button-container {
-    right: 8px;
-    top: 60%;
-  }
-
-  .button-container2 {
-    right: 8px;
-    top: 72%;
-  }
-}
+  /* 🔥 Floating buttons keep the same position on every screen */
 
 `}</style>
    </>

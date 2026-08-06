@@ -1,10 +1,49 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 export default function index20(){
+
+  /* 🔥 Native hand-gesture swipe for the fabrication carousel (consistent with all carousels) */
+  useEffect(() => {
+    const carousel = document.getElementById("carouselExampleAutoplaying");
+    if (!carousel) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+
+    const onTouchStart = (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      tracking = true;
+    };
+
+    const onTouchEnd = (e) => {
+      if (!tracking) return;
+      tracking = false;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      /* horizontal swipe only, past a comfortable threshold */
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+      const dir = dx < 0 ? "next" : "prev";
+      const btn = carousel.querySelector(`[data-bs-slide="${dir}"]`);
+      if (btn) btn.click();
+    };
+
+    carousel.addEventListener("touchstart", onTouchStart, { passive: true });
+    carousel.addEventListener("touchend", onTouchEnd, { passive: true });
+
+    return () => {
+      carousel.removeEventListener("touchstart", onTouchStart);
+      carousel.removeEventListener("touchend", onTouchEnd);
+    };
+  }, []);
+
     return (
         <>
   <div>
       {/* BANNER */}
-      <div className="">
+      <div className="fab-banner">
         <div className="text-center px-md-5 px-2">
           <h2 className="pt-4 mobile-fonts-heading" style={{ fontSize: '60px' }}>
             Fabrication
@@ -28,6 +67,7 @@ cutting.
               id="carouselExampleAutoplaying"
               className="carousel slide"
               data-bs-ride="carousel"
+              data-bs-touch="false"
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -53,19 +93,21 @@ cutting.
                 </div>
               </div>
               <button
-                className="carousel-control-prev"
+                className="carousel-control-prev custom-nav"
                 type="button"
                 data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev"
               >
+                <span className="arrow-btn" aria-hidden="true">‹</span>
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
-                className="carousel-control-next"
+                className="carousel-control-next custom-nav"
                 type="button"
                 data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="next"
               >
+                <span className="arrow-btn" aria-hidden="true">›</span>
                 <span className="visually-hidden">Next</span>
               </button>
             </div>
@@ -114,7 +156,7 @@ cutting. </h5>
       {/* Section 1 END */}
 
       {/* Section 3 */}
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -188,7 +230,7 @@ cutting. </h5>
       {/* Section 3 END */}
 
       {/* Section: Machining Services */}
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -239,7 +281,7 @@ cutting. </h5>
 
 
 
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -300,7 +342,7 @@ cutting. </h5>
       {/* new  */}
 
 
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -352,7 +394,7 @@ waste.
       {/* new  */}
 
 
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -394,7 +436,7 @@ waste.
         {/* nwe  */}
 
 
-        <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+        <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -439,7 +481,7 @@ waste.
 
 
 
-      <div className="p-md-5 py-md-0 p-3" style={{ backgroundColor: '#f4f4f4' }}>
+      <div className="fab-section" style={{ backgroundColor: '#f4f4f4' }}>
         <div className="px-md-5">
           <h2
             className="pt-4 mobile-fonts-heading text-center"
@@ -631,8 +673,75 @@ and assemblies that meet the highest levels of reliability, performance, and qua
       {/* Section: Pipe Features */}
     
     </div>
-  
+    <style jsx>{`
+/* 🔥 CAROUSEL ARROWS (consistent with all carousels) */
+.custom-nav {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+.carousel-control-prev.custom-nav {
+  left: 20px;
+}
+
+.carousel-control-next.custom-nav {
+  right: 20px;
+}
+
+.arrow-btn {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: red;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev.custom-nav {
+    left: 10px;
+  }
+
+  .carousel-control-next.custom-nav {
+    right: 10px;
+  }
+}
+
+/* SECTION BANDS (80px / 40px standard) */
+.fab-banner {
+  padding: 80px 0 40px;
+}
+
+.fab-section {
+  padding: 80px 16px;
+}
+
+@media (min-width: 768px) {
+  .fab-section {
+    padding: 80px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fab-banner {
+    padding: 40px 0 32px;
+  }
+
+  .fab-section {
+    padding: 40px 16px;
+  }
+}
+`}</style>
 
         </>
     )}

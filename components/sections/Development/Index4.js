@@ -44,7 +44,7 @@ export default function Index4(){
       </p>
 
       <p>
-        BMW's research and development laboratory is one of the finest in India in terms of the sheer efficiency and updated modern testing facilities. Changing the face of the alumina ceramic and cast basalt manufacturing, one innovation at a time. Every product of BMW is a result of a flawless R&D set-up.
+        BMW&apos;s research and development laboratory is one of the finest in India in terms of the sheer efficiency and updated modern testing facilities. Changing the face of the alumina ceramic and cast basalt manufacturing, one innovation at a time. Every product of BMW is a result of a flawless R&D set-up.
       </p>
 
       <p>
@@ -158,7 +158,7 @@ export default function Index4(){
                 </tr>
                 <tr style={{ border: '2px solid white' }}>
                   <td style={{ backgroundColor: '#f48221' }}>14.</td>
-                  <td style={{ backgroundColor: '#f48221' }}>MOH'S hardness</td>
+                  <td style={{ backgroundColor: '#f48221' }}>MOH&apos;S hardness</td>
                   <td style={{ backgroundColor: '#f48221' }}>EN-101</td>
                   <td style={{ backgroundColor: '#f48221' }}>India</td>
                 </tr>
@@ -268,7 +268,7 @@ export default function Index4(){
       <div className="rd-card">
         <img src="images/devlopment/section-1 (6).png" alt="" />
         <h4>Deep Abrasion Testing Machine</h4>
-        <p>A deep abrasion testing machine is a device that evaluates how well a material resists deep abrasion. It's used to test the resistance of unglazed tiles and other materials to abrasion.
+        <p>A deep abrasion testing machine is a device that evaluates how well a material resists deep abrasion. It&apos;s used to test the resistance of unglazed tiles and other materials to abrasion.
             </p>
       </div>
       <div className="rd-card">
@@ -300,7 +300,7 @@ export default function Index4(){
       <div className="rd-card">
         <img src="images/devlopment/section-1 (4).png" alt="" />
         <h4>Coefficient of Linear Expansion Testing Machine</h4>
-        <p>CLTE tester is a machine that measures how much a material expands when heated or cooled. The coefficient of linear expansion is a measure of how much a material's length changes in relation to its total length when the temperature changes by one Kelvin.</p>
+        <p>CLTE tester is a machine that measures how much a material expands when heated or cooled. The coefficient of linear expansion is a measure of how much a material&apos;s length changes in relation to its total length when the temperature changes by one Kelvin.</p>
       </div>
       <div className="rd-card">
         <img src="images/devlopment/section-1 (1).png" alt="" />
@@ -347,7 +347,7 @@ export default function Index4(){
 
 .rd-section.light {
   background: #f9f9f9;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 .rd-container {
@@ -384,14 +384,14 @@ export default function Index4(){
 
 .rd-text p {
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
 }
 
 /* TABLE */
 .table-card {
   background: white;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -400,12 +400,12 @@ export default function Index4(){
 .rd-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 24px;
 }
 
 .rd-card {
   background: #fff;
-  padding: 15px;
+  padding: 24px;
   border-radius: 12px;
   text-align: center;
 }
@@ -416,7 +416,7 @@ export default function Index4(){
 }
 
 .rd-card h4 {
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 20px;
 }
 
@@ -429,7 +429,7 @@ export default function Index4(){
 .rd-partners {
   display: flex;
   justify-content: center;
-  gap:10px
+  gap: 16px
   
 }
 
@@ -450,10 +450,10 @@ export default function Index4(){
     font-size: 22px;
     ]
     .rd-section {
-  padding: 40px 10px;
+  padding: 40px 20px;
 }
-  rd-section.light {
-  padding: 20px 10px;
+  .rd-section.light {
+  padding: 40px 20px;
     }
 
 

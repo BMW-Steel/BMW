@@ -31,13 +31,13 @@ export default function Footer() {
           <div className=" text-md-start pt-5">
             <div className="row mx-0 mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-start">
-                <a
+                <Link
   className="navbar-brand d-block text-start"
   href="/"
   style={{ marginLeft: "-30px" }}
 >
                   <img src="images/llogo.png" height="100px" alt="" />
-                </a>
+                </Link>
                 <p>
                   02 Balbir Road Dalanwala,
                   Dehradun, (U.K.)-248001
@@ -60,7 +60,7 @@ export default function Footer() {
                   </Link>
                 </p>
                 <p>
-                  <Link href="/FusedAluminaAbrasive" className="text-reset text-decoration-none now">
+                  <Link href="/fusedaluminaabrasive" className="text-reset text-decoration-none now">
                     <b>UNIT - 2</b><br /> BMW Steels Ltd.
                     D-8, INDUSTRIAL ESTATE,
                     JUNCTION ROAD, KHURJA – 203101
@@ -84,46 +84,46 @@ export default function Footer() {
                 </p>
                 
                 <p>
-                  <Link href="/AluminaCeramic" className="text-reset text-decoration-none now">
+                  <Link href="/aluminaceramic" className="text-reset text-decoration-none now">
                     Alumina Ceramic
                   </Link>
                 </p>
                 <p>
-                  <Link href="/CastBasalt" className="text-reset text-decoration-none now">
+                  <Link href="/castbasalt" className="text-reset text-decoration-none now">
                     Cast Basalt
                   </Link>
                 </p>
                 <p>
-                  <Link href="/ResearchDevelopmentDepartment" className="text-reset text-decoration-none now">
+                  <Link href="/researchdevelopmentdepartment" className="text-reset text-decoration-none now">
                     Research & Development Department
                     
                   </Link>
                 </p>
                 <p>
-                  <Link href="/ChemicallyBondedCompoundSeries" className="text-reset text-decoration-none now">
+                  <Link href="/chemicallybondedcompoundseries" className="text-reset text-decoration-none now">
                     CBC Series
                     
                   </Link>
                 </p>
                 <p>
-                  <Link href="/WearSealDiamondPutty" className="text-reset text-decoration-none now">
+                  <Link href="/wearsealdiamondputty" className="text-reset text-decoration-none now">
                     Wear Seal Diamond Putty
                     
                   </Link>
                 </p>
                 <p>
-                  <Link href="/BasalticMineralFertilizer" className="text-reset text-decoration-none now">
+                  <Link href="/basalticmineralfertilizer" className="text-reset text-decoration-none now">
                     Basaltic Mineral Fertilizer
                     
                   </Link>
                 </p>
                 <p>
-                  <Link href="ContactUs" className="text-reset text-decoration-none now">
+                  <Link href="/contactus" className="text-reset text-decoration-none now">
                     Contact
                   </Link>
                 </p>
                 <p>
-                  <Link href="/PravicyPolicy" className="text-reset text-decoration-none now">
+                  <Link href="/pravicypolicy" className="text-reset text-decoration-none now">
                     Privacy Policy
                   </Link>
                 </p>
@@ -160,6 +160,74 @@ export default function Footer() {
           </a>
         </div>
       </footer>
+
+      {/* 🔥 Responsive footer styles — layout/content untouched, only mobile-fit spacing & wrapping */}
+      <style jsx>{`
+        /* Contain the footer so nothing can overflow on small screens */
+        footer {
+          overflow-x: hidden;
+        }
+
+        /* Logo: undo the desktop -30px offset on small screens so it never overflows */
+        @media (max-width: 767.98px) {
+          footer .navbar-brand {
+            margin-left: 0 !important;
+          }
+
+          footer .navbar-brand img {
+            height: 80px;
+            width: auto;
+          }
+
+          /* Neatly centered brand block on mobile */
+          footer .text-start {
+            text-align: center;
+          }
+        }
+
+        /* Keep long addresses / links readable on any screen */
+        footer p,
+        footer a,
+        footer h6 {
+          overflow-wrap: break-word;
+          word-break: break-word;
+        }
+
+        /* Mobile-only refinements (desktop look stays exactly as before) */
+        @media (max-width: 767.98px) {
+          /* Address + Company link lists: comfortable vertical rhythm */
+          footer p {
+            line-height: 1.6;
+          }
+
+          /* Align stacked “Address” column with the rest */
+          footer .col-md-3:nth-child(2) {
+            text-align: center;
+          }
+
+          /* Contact icons: tighter inline spacing when stacked */
+          footer .fas {
+            margin-right: 8px !important;
+          }
+
+          /* Social bar: keep icons comfortably spaced */
+          footer section a.me-4 {
+            margin-right: 12px;
+          }
+
+          footer section a:last-child {
+            margin-right: 0;
+          }
+        }
+
+        /* Bottom copyright bar: clean wrap on tiny screens */
+        @media (max-width: 575.98px) {
+          footer .text-center.p-4 {
+            font-size: 14px;
+            line-height: 1.8;
+          }
+        }
+      `}</style>
     </>
   );
 }

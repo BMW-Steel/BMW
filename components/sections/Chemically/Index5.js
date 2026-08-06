@@ -147,7 +147,7 @@ export default function Index5(){
     <style jsx>{`
 
 .cbc-section {
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 .cbc-section.light {
@@ -170,7 +170,7 @@ export default function Index5(){
 .cbc-title {
   font-size: 40px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .cbc-title.small {
@@ -179,7 +179,7 @@ export default function Index5(){
 
 /* TEXT */
 .cbc-text {
-  margin-top: 30px;
+  margin-top: 32px;
   max-width: 1200px;
   margin-inline: auto;
 
@@ -188,7 +188,7 @@ export default function Index5(){
 .cbc-text p {
   color: #444;
   line-height: 1.8;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 16px;
 }
 
@@ -196,7 +196,7 @@ export default function Index5(){
 .cbc-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 50px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -214,7 +214,7 @@ export default function Index5(){
 }
   .table-row td {
   background: red;
-  padding: 10px;
+  padding: 12px;
 }
 
 /* ALT ROW */
@@ -232,14 +232,14 @@ export default function Index5(){
 /* LIST */
 .cbc-list {
   list-style: none;
-  margin-top: 30px;
+  margin-top: 32px;
   padding: 0;
   font-size: 16px;
   
 }
 
 .cbc-list li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #444;
   font-size: 16px;
 }
@@ -254,7 +254,7 @@ export default function Index5(){
 .cbc-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 16px;
 }
 
 .cbc-gallery img {
@@ -264,14 +264,14 @@ export default function Index5(){
 
 /* CAROUSEL */
 .cbc-carousel {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
-cbc-section {
-  padding: 30px 10px;
+.cbc-section {
+  padding: 40px 20px;
 }
   .cbc-grid {
     grid-template-columns: 1fr;
