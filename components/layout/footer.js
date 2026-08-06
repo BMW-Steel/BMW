@@ -178,11 +178,6 @@ export default function Footer() {
             height: 80px;
             width: auto;
           }
-
-          /* Neatly centered brand block on mobile */
-          footer .text-start {
-            text-align: center;
-          }
         }
 
         /* Keep long addresses / links readable on any screen */
@@ -195,14 +190,20 @@ export default function Footer() {
 
         /* Mobile-only refinements (desktop look stays exactly as before) */
         @media (max-width: 767.98px) {
+          /* Everything left-aligned on mobile */
+          footer .text-start,
+          footer .col-md-3,
+          footer .col-md-2,
+          footer .col-md-4,
+          footer h6,
+          footer p,
+          footer a {
+            text-align: left !important;
+          }
+
           /* Address + Company link lists: comfortable vertical rhythm */
           footer p {
             line-height: 1.6;
-          }
-
-          /* Align stacked “Address” column with the rest */
-          footer .col-md-3:nth-child(2) {
-            text-align: center;
           }
 
           /* Contact icons: tighter inline spacing when stacked */
@@ -210,7 +211,12 @@ export default function Footer() {
             margin-right: 8px !important;
           }
 
-          /* Social bar: keep icons comfortably spaced */
+          /* Social bar: keep icons comfortably spaced, left-aligned */
+          footer section.d-flex {
+            justify-content: flex-start !important;
+            align-items: flex-start;
+          }
+
           footer section a.me-4 {
             margin-right: 12px;
           }
@@ -220,9 +226,10 @@ export default function Footer() {
           }
         }
 
-        /* Bottom copyright bar: clean wrap on tiny screens */
-        @media (max-width: 575.98px) {
+        /* Bottom copyright bar: left-aligned, clean wrap on mobile */
+        @media (max-width: 767.98px) {
           footer .text-center.p-4 {
+            text-align: left !important;
             font-size: 14px;
             line-height: 1.8;
           }
